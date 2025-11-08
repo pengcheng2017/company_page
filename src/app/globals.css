@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.rdp-vhidden {
+  @apply hidden;
+}
+
+@layer base {
+  ol {
+    list-style: revert;
+    padding-left: 2rem;
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .prose-custom h1 {
+    @apply text-4xl mt-4 -mb-2 font-plus-jakarta-sans-bold;
+  }
+
+  .prose-custom h2 {
+    @apply text-3xl mt-4 -mb-2 font-plus-jakarta-sans-bold;
+  }
+
+  .prose-custom h3 {
+    @apply text-xl mt-4 -mb-2 font-plus-jakarta-sans-bold;
+  }
+
+  .prose-custom h4 {
+    @apply text-lg mt-4 -mb-2 font-plus-jakarta-sans-bold;
+  }
+
+  .prose-custom a {
+    @apply text-primary;
+  }
+}

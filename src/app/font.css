@@ -1,0 +1,51 @@
+/* PlusJakarta Sans */
+@font-face {
+    font-family: 'PlusJakartaSans';
+    font-style: normal;
+    src: url('../assets/font/PlusJakartaSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Italic';
+    font-style: italic;
+    src: url('../assets/font/PlusJakartaSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Bold';
+    font-style: normal;
+    src: url('../assets/font/PlusJakartaSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-SemiBold';
+    font-style: normal;
+    src: url('../assets/font/PlusJakartaSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-ExtraBold';
+    font-style: normal;
+    src: url('../assets/font/PlusJakartaSans-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Light';
+    font-style: normal;
+    src: url('../assets/font/PlusJakartaSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Medium';
+    font-style: normal;
+    src: url('../assets/font/PlusJakartaSans-Medium.ttf');
+}
+
+
+/* Kastelov Kinetika */
+
+@font-face {
+    font-family: 'KastelovKinetika-Ultra';
+    font-style: bold;
+    src: url('../assets/font/KastelovKinetika-Ultra.otf') format('opentype');
+}
