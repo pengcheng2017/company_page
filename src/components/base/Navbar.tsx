@@ -74,10 +74,10 @@ export default function BaseNavbar({ authenticated }: { authenticated: any }) {
                 <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
                     <div className="flex items-center flex-1 overflow-hidden">
                         <a href="#home" onClick={(e) => handleScroll(e, 'home')} className="mr-6 flex-shrink-0">
-                            <img
-                                src="https://ext.same-assets.com/130432291/1178005615.svg"
-                                alt="JUZI.BOT"
-                                className="h-12"
+                            <Image
+                                src={require('@/assets/icon/logo.png')}
+                                alt="SalesUP.AI"
+                                className="h-12 w-12 rounded-lg"
                             />
                         </a>
                         <nav className="hidden font-plus-jakarta-sans-semi-bold px-4 lg:flex items-center gap-6 text-sm text-white">
@@ -100,11 +100,15 @@ export default function BaseNavbar({ authenticated }: { authenticated: any }) {
                     </div>
 
                     <div className="flex items-center gap-4 text-sm flex-shrink-0">
-                        <div onClick={() => setOpenLocale(!openLocale)} className="flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">
+                        <div onClick={() => setOpenLocale(!openLocale)} className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">
                             <span>
                                 {Language(dictionary.button_change_language_section)}
                             </span>
                             <ChevronDown className="w-4 h-4" />
+                        </div>
+                        
+                        <div onClick={() => setIsOpen(!isOpen)} className="lg:hidden flex items-center cursor-pointer hover:opacity-70">
+                            <HamburgerMenuIcon className="w-6 h-6 text-white" />
                         </div>
                     </div>
                 </div>
@@ -142,25 +146,37 @@ export default function BaseNavbar({ authenticated }: { authenticated: any }) {
                             exit={{ opacity: 0, y: -100 }}
                             transition={{ duration: 0.3 }}
                             className="fixed z-30 w-full h-full">
-                            <div className="space-y-4 pb-4 relative bg-white rounded-b-[2rem] bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 w-full overflow-y-auto scrollbar-none">
+                            <div className="space-y-4 pb-4 relative bg-[#22103b] bg-clip-padding backdrop-filter backdrop-blur-xl w-full overflow-y-auto scrollbar-none">
                                 <div className="w-full relative pt-4 px-6 flex justify-end">
                                     <div onClick={() => setIsOpen(false)} className="lg:hidden flex items-center cursor-pointer hover:opacity-70">
-                                        <Cross1Icon className="w-6 h-6 text-greyscale-700" />
+                                        <Cross1Icon className="w-6 h-6 text-white" />
                                     </div>
                                 </div>
-                                <div className="px-6 relative space-y-4 flex flex-col font-plus-jakarta-sans-bold text-xl w-full">
-                                    <a onClick={(e) => handleScroll(e, 'home')} className="text-greyscale-400 hover:text-primary-700 cursor-pointer" href="#home">
+                                <div className="px-6 relative space-y-4 flex flex-col font-plus-jakarta-sans-bold text-base w-full">
+                                    <a onClick={(e) => handleScroll(e, 'home')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#home">
                                         {Language(dictionary.home_text_header_menu)}
                                     </a>
-                                    <a onClick={(e) => handleScroll(e, 'features')} className="text-greyscale-400 hover:text-primary-700 cursor-pointer" href="#features">
+                                    <a onClick={(e) => handleScroll(e, 'features')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#features">
                                         {Language(dictionary.features_text_header_menu)}
                                     </a>
-                                    <a onClick={(e) => handleScroll(e, 'prices')} className="text-greyscale-400 hover:text-primary-700 cursor-pointer" href="#prices">
+                                    <a onClick={(e) => handleScroll(e, 'prices')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#prices">
                                         {Language(dictionary.prices_text_header_menu)}
                                     </a>
-                                    <a onClick={(e) => handleScroll(e, 'about-us')} className="text-greyscale-400 hover:text-primary-700 cursor-pointer" href="#about-us">
+                                    <a onClick={(e) => handleScroll(e, 'about-us')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#about-us">
                                         {Language(dictionary.about_us_text_header_menu)}
                                     </a>
+                                    <a onClick={(e) => handleScroll(e, 'contacts')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#contacts">
+                                        {Language(dictionary.contacts_text_header_menu)}
+                                    </a>
+                                    
+                                    <div className="pt-4 border-t border-white/20">
+                                        <div onClick={() => setOpenLocale(!openLocale)} className="flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">
+                                            <span>
+                                                {Language(dictionary.button_change_language_section)}
+                                            </span>
+                                            <ChevronDown className="w-4 h-4" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             {
@@ -170,7 +186,7 @@ export default function BaseNavbar({ authenticated }: { authenticated: any }) {
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -100 }}
                                         transition={{ duration: 0.3 }}
-                                        className="absolute z-50 w-40 h-20 right-4 -mt-6 shadow-md bg-white bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-70 flex items-center justify-center">
+                                        className="absolute z-50 w-40 px-4 py-4 right-4 -mt-6 shadow-md bg-white rounded-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-90 flex items-center justify-center">
                                         <div className="flex flex-col space-y-2">
                                             <div onClick={() => handleLocaleNavigation("en")} className={`${locale == "en" ? "text-[#DA37E8]" : "text-greyscale-600"} flex items-center font-plus-jakarta-sans-bold cursor-pointer`}>
                                                 ENGLISH

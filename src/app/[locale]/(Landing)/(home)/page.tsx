@@ -43,7 +43,6 @@ export default function HomePage() {
     <>
       {/* <LogAnalytics eventName="page_view" eventParams={{ page: "home" }} /> */}
       <FeatureJumbotronSection />
-      <FeatureKeyFeaturesSection />
       <FeatureHowItWorksSection />
       <FeaturePricelistSection />
       <FeatureBottomCTASection />

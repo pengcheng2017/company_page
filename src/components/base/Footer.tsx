@@ -14,7 +14,7 @@ export default function BaseFooter() {
                     {/* Footer Contact */}
                     <div className="flex-1">
                         <div className="text-2xl font-bold mb-5">
-                            🧭 salesUP.AI
+                            <Image src={require("@/assets/icon/logo.png")} alt="salesup.ai" className="w-14 h-14 rounded-lg" />
                         </div>
                         <div className="text-sm space-y-2">
                             <p>{Language(dictionary.footer_contact_whatsapp_section)}</p>
@@ -24,7 +24,7 @@ export default function BaseFooter() {
                     </div>
 
                     {/* Footer Links */}
-                    <div className="flex-1 flex justify-end">
+                    <div className="flex-1 flex justify-end hidden md:block">
                         <ul className="list-none space-y-2 text-sm">
                             <li>
                                 <a href="#" className="text-gray-300 hover:text-white transition-colors">

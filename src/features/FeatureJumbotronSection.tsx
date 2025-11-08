@@ -3,6 +3,7 @@
 import Language from "@/lib/language";
 import dictionary from "@/assets/locale/dictionary.json";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 
 export default function FeatureJumbotronSection() {
@@ -86,6 +87,62 @@ export default function FeatureJumbotronSection() {
                             </a>
                         </div>
 
+                    </div>
+                </div>
+
+                <div className="max-w-[1200px] mx-auto my-60 px-6">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
+                        <div className="flex-1 text-white">
+                            <h2 className="text-3xl font-semibold mb-1">
+                                {Language(dictionary.key_features_title_section)}
+                            </h2>
+                            <p className="text-xl text-white/80 mb-8">
+                                {Language(dictionary.key_features_subtitle_section)}
+                            </p>
+
+                            <ul className="space-y-4 text-gray-700">
+                                <li className="flex flex-col items-start gap-1">
+                                    <span className="text-[#EF3BFB] text-xl font-semibold">
+                                        {Language(dictionary.key_feature_item_1_title_section)}
+                                    </span>
+                                    <span className="text-white/80">
+                                        {Language(dictionary.key_feature_item_1_subtitle_section)}
+                                    </span>
+                                </li>
+                                <li className="flex flex-col items-start gap-1">
+                                    <span className="text-[#EF3BFB] text-xl font-semibold">
+                                        {Language(dictionary.key_feature_item_2_title_section)}
+                                    </span>
+                                    <span className="text-white/80">
+                                        {Language(dictionary.key_feature_item_2_subtitle_section)}
+                                    </span>
+                                </li>
+                                <li className="flex flex-col items-start gap-1">
+                                    <span className="text-[#EF3BFB] text-xl font-semibold">
+                                        {Language(dictionary.key_feature_item_3_title_section)}
+                                    </span>
+                                    <span className="text-white/80">
+                                        {Language(dictionary.key_feature_item_3_subtitle_section)}
+                                    </span>
+                                </li>
+                                <li className="flex flex-col items-start gap-1">
+                                    <span className="text-[#EF3BFB] text-xl font-semibold">
+                                        {Language(dictionary.key_feature_item_4_title_section)}
+                                    </span>
+                                    <span className="text-white/80">
+                                        {Language(dictionary.key_feature_item_4_subtitle_section)}
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="flex-1">
+                            <Image
+                                src={require('@/assets/image/our-product.png')}
+                                alt="AI Process Engine"
+                                className="w-full rounded-lg"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
