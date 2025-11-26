@@ -265,9 +265,9 @@
         "cn": "✨ 立即免费试用"
     },
     "footer_contact_whatsapp_section": {
-        "eng": "WhatsApp: +62 812 3456 7890",
-        "id": "WhatsApp: +62 812 3456 7890",
-        "cn": "WhatsApp: +62 812 3456 7890"
+        "eng": "WhatsApp: +62 821 1388 7516",
+        "id": "WhatsApp: +62 821 1388 7516",
+        "cn": "WhatsApp: +62 821 1388 7516"
     },
     "footer_contact_email_section": {
         "eng": "Email: hello@salesup.ai",
@@ -464,5 +464,48 @@
         "eng": "SalesUp.Ai Model",
         "id": "Model SalesUp.Ai",
         "cn": "SalesUp.Ai大模型"
+    },
+    "register_section": {
+        "eng": "Start Your Intelligent Sales Journey",
+        "id": "Mulailah Perjalanan Penjualan Cerdas Anda",
+        "cn": "开启您的智能销售之旅"
+    },
+    "register_username_section": {
+        "eng": "Account",
+        "id": "Akun",
+        "cn": "账户名"
+    },
+    "register_phone_section": {
+        "eng": "Phone",
+        "id": "Telepon",
+        "cn": "电话号码"
+    },
+    "register_password_section": {
+        "eng": "Password",
+        "id": "Kata sandi",
+        "cn": "密码"
+    },
+    "register_confirm_password_section": {
+        "eng": "Confirm Password",
+        "id": "Konfirmasi Kata Sandi",
+        "cn": "确认密码"
+    },
+    "register_enter_username_section": {
+        "eng": "Enter your account name",
+        "id": "Masukkan nama akun Anda",
+        "cn": "输入你的账户名"
+    },
+    "register_enter_phone_number_section": {
+        "eng": "Enter your phone number",
+        "id": "Masukkan nomor telepon Anda",
+        "cn": "输入你的电话号码"
+    },    "register_enter_password_section": {
+        "eng": "Enter your password",
+        "id": "Masukkan kata sandi Anda",
+        "cn": "输入你的输入你的密码电话号码"
+    },    "register_re_enter_password_section": {
+        "eng": "Re-enter your password",
+        "id": "Masukkan ulang kata sandi Anda",
+        "cn": "再次输入你的密码"
     }
 }

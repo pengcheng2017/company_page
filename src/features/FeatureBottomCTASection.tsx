@@ -15,7 +15,7 @@ export default function FeatureBottomCTASection() {
                     {Language(dictionary.final_cta_subtitle_section)}
                 </p>
                 <a 
-                    href="#" 
+                    href="/register" 
                     className="inline-block bg-white text-purple-600 py-3 px-8 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
                 >
                     {Language(dictionary.final_cta_button_section)}

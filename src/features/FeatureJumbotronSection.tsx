@@ -63,7 +63,7 @@ export default function FeatureJumbotronSection() {
 
                     <div className="flex justify-center my-12">
                         <a
-                            href="#"
+                            href="/register"
                             className="px-10 py-4 font-semibold text-lg text-white rounded-full transition-transform hover:scale-105"
                             style={{ background: 'linear-gradient(96deg, #EF3BFB 0.67%, #6721FF 98.48%)' }}
                         >

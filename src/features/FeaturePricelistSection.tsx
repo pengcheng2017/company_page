@@ -32,12 +32,10 @@ export default function FeaturePricelistSection() {
                             <li className="py-2 border-b border-gray-200">
                                 {Language(dictionary.pricing_plan_1_feature_2_section)}
                             </li>
-                            <li className="py-2">
-                                {Language(dictionary.pricing_plan_1_feature_3_section)}
-                            </li>
+             
                         </ul>
                         <a 
-                            href="#" 
+                            href="/register" 
                             className="inline-block bg-purple-600 text-white py-3 px-8 rounded-lg font-semibold hover:bg-purple-700 transition-all duration-300 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
                         >
                             {Language(dictionary.pricing_plan_1_cta_section)}
@@ -73,7 +71,7 @@ export default function FeaturePricelistSection() {
                             </li>
                         </ul>
                         <a 
-                            href="#" 
+                            href="/register" 
                             className="inline-block bg-purple-600 text-white py-3 px-8 rounded-lg font-semibold hover:bg-purple-700 transition-all duration-300 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
                         >
                             {Language(dictionary.pricing_plan_2_cta_section)}

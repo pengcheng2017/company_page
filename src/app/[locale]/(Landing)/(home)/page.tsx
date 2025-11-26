@@ -42,10 +42,11 @@ export default function HomePage() {
   return (
     <>
       {/* <LogAnalytics eventName="page_view" eventParams={{ page: "home" }} /> */}
-      <FeatureJumbotronSection />
-      <FeatureHowItWorksSection />
-      <FeaturePricelistSection />
-      <FeatureBottomCTASection />
+
+
+      <FeatureJumbotronSection /><FeatureHowItWorksSection /><FeaturePricelistSection /><FeatureBottomCTASection />
+      
+      
     </>
   );
 }

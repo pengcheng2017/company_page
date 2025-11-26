@@ -18,7 +18,7 @@ export default function BaseFooter() {
                         </div>
                         <div className="text-sm space-y-2">
                             <p>{Language(dictionary.footer_contact_whatsapp_section)}</p>
-                            <p>{Language(dictionary.footer_contact_email_section)}</p>
+                            
                             <p>{Language(dictionary.footer_contact_address_section)}</p>
                         </div>
                     </div>

@@ -73,33 +73,28 @@ export default function BaseNavbar({ authenticated }: { authenticated: any }) {
             <header className="fixed top-0 left-0 right-0 z-50 bg-[#1d0f33]/95 backdrop-blur-sm">
                 <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
                     <div className="flex items-center flex-1 overflow-hidden">
-                        <a href="#home" onClick={(e) => handleScroll(e, 'home')} className="mr-6 flex-shrink-0">
+                        <a href="/" className="mr-6 flex-shrink-0">
                             <Image
                                 src={require('@/assets/icon/logo.png')}
                                 alt="SalesUP.AI"
                                 className="h-12 w-12 rounded-lg"
                             />
                         </a>
+                    
                         <nav className="hidden font-plus-jakarta-sans-semi-bold px-4 lg:flex items-center gap-6 text-sm text-white">
-                            <a onClick={(e) => handleScroll(e, 'home')} className="text-greyscale-400 hover:text-[#DA37E8] cursor-pointer" href="#home">
+                            <a  className="text-greyscale-400 hover:text-[#DA37E8] cursor-pointer" href="/">
                                 {Language(dictionary.home_text_header_menu)}
                             </a>
-                            <a onClick={(e) => handleScroll(e, 'features')} className="text-greyscale-400 hover:text-[#DA37E8] cursor-pointer" href="#features">
-                                {Language(dictionary.features_text_header_menu)}
-                            </a>
-                            <a onClick={(e) => handleScroll(e, 'prices')} className="text-greyscale-400 hover:text-[#DA37E8] cursor-pointer" href="#prices">
-                                {Language(dictionary.prices_text_header_menu)}
-                            </a>
-                            <a onClick={(e) => handleScroll(e, 'about-us')} className="text-greyscale-400 hover:text-primary-700 cursor-pointer" href="#about-us">
-                                {Language(dictionary.about_us_text_header_menu)}
-                            </a>
-                            <a onClick={(e) => handleScroll(e, 'contacts')} className="text-greyscale-400 hover:text-[#DA37E8] cursor-pointer" href="#contacts">
-                                {Language(dictionary.contacts_text_header_menu)}
-                            </a>
+       
                         </nav>
                     </div>
 
                     <div className="flex items-center gap-4 text-sm flex-shrink-0">
+                        <div>
+                                <a href="/register"  className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors"><span>Register</span>
+                           {/* <Link href="/register" className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">Register</Link> */}
+                        </a>
+                        </div>
                         <div onClick={() => setOpenLocale(!openLocale)} className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">
                             <span>
                                 {Language(dictionary.button_change_language_section)}
@@ -153,7 +148,7 @@ export default function BaseNavbar({ authenticated }: { authenticated: any }) {
                                     </div>
                                 </div>
                                 <div className="px-6 relative space-y-4 flex flex-col font-plus-jakarta-sans-bold text-base w-full">
-                                    <a onClick={(e) => handleScroll(e, 'home')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#home">
+                                    <a onClick={(e) => handleScroll(e, 'home')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="/home">
                                         {Language(dictionary.home_text_header_menu)}
                                     </a>
                                     <a onClick={(e) => handleScroll(e, 'features')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#features">
