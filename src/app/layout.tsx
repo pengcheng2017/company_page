@@ -28,11 +28,28 @@ export default function RootLayout({
         <Script id="gtag-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){dataLayer.push(arguments);} 
             gtag('js', new Date());
             gtag('config', 'AW-17759902875');
           `}
         </Script>
+
+
+       
+<Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17759902875">
+</Script>
+<Script>
+  {
+    `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17759902875');
+    `
+  }
+
+</Script>
         <>
 
 
