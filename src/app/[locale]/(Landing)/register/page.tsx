@@ -100,7 +100,7 @@ export default function Register() {
 
       if (response.code === 200) {
         // 注册成功
-        setSuccess('Registration successful! Redirecting to login page...')
+        setSuccess('Registration successful! ')
         
         // 3秒后跳转到登录页面
         setTimeout(() => {
