@@ -13,6 +13,7 @@ export interface RegisterRequest {
   username: string;
   password: string;
   phone: string;
+  invitationCode: string;
   confirmPassword: string;
 }
 

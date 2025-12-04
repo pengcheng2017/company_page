@@ -480,6 +480,11 @@
         "id": "Telepon",
         "cn": "电话号码"
     },
+    "register_invitation_code_section": {
+        "eng": "Invitation Code",
+        "id": "Kode Undangan",
+        "cn": "邀请码"
+    },
     "register_password_section": {
         "eng": "Password",
         "id": "Kata sandi",

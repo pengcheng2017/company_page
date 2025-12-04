@@ -12,6 +12,7 @@ export default function Register() {
   const [formData, setFormData] = useState({
     username: '',
     phone: '',
+    invitationCode: '',
     password: '',
     confirmPassword: ''
   })
@@ -92,6 +93,7 @@ export default function Register() {
       const response = await apiService.register({
         username: formData.username,
         password: formData.password,
+        invitationCode: formData.invitationCode,
         phone: formData.phone,
         confirmPassword: formData.confirmPassword
       })
@@ -180,6 +182,23 @@ export default function Register() {
                 className="form-input"
                 placeholder="Enter your phone number"
                 value={formData.phone}
+                onChange={handleChange}
+                required
+                disabled={isLoading}
+              />
+            </div>
+          </div>
+
+          <div className="form-group">
+            <label className="form-label">{Language(dictionary.register_invitation_code_section)}</label>
+            <div className="input-with-icon">
+              <User size={20} className="input-icon" />
+              <input
+                type="text"
+                name="invitationCode"
+                className="form-input"
+                placeholder="Enter your invitation code"
+                value={formData.invitationCode}
                 onChange={handleChange}
                 required
                 disabled={isLoading}
