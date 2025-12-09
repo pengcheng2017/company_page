@@ -30,9 +30,9 @@
         "cn": "LOGO"
     },
     "title_section": {
-        "eng": "Raise your beauty sales with automatic AI!",
-        "id": "Tingkatkan penjualan kecantikan Anda dengan AI otomatis!",
-        "cn": "用自动化AI提升您的美容销售!"
+        "eng": "Raise your sales with automatic AI!",
+        "id": "Tingkatkan Penjualan Anda dengan AI Otomatis!",
+        "cn": "用自动化AI提升您的销售!"
     },
     "main_title_section": {
         "eng": "Raise your sales with automatic AI!",
@@ -60,9 +60,9 @@
         "cn": "建立信任，创建促销计划，完成销售 - 所有这些都可以通过salesup.ai自动完成"
     },
     "try_for_free_title_section": {
-        "eng": "Use AI to Automatically Improve Your Beauty Sales",
-        "id": "Gunakan AI untuk Meningkatkan Penjualan Kecantikan Anda Secara Otomatis",
-        "cn": "使用AI自动提升您的美容销售"
+        "eng": "Use AI to Automatically Improve Your Sales",
+        "id": "Gunakan AI untuk Meningkatkan Penjualan  Anda Secara Otomatis",
+        "cn": "使用AI自动提升您的销售"
     },
     "try_for_free_subtitle_section": {
         "eng": "From building trust, planning activities to completing sales, salesUP.AI is automatically completed with one click.",
@@ -100,9 +100,9 @@
         "cn": "自动化促销计划"
     },
     "key_feature_item_2_subtitle_section": {
-        "eng": "AI creates and sends promotional campaigns according to beauty moments & trends.",
-        "id": "AI membuat dan mengirim kampanye promosi sesuai dengan momen & tren kecantikan.",
-        "cn": "AI根据美容时刻和趋势创建并发送促销活动。"
+        "eng": "AI creates and sends promotional campaigns according to trends.",
+        "id": "AI membuat dan mengirim promosi berdasarkan tren.",
+        "cn": "AI根据趋势创建并发送促销活动。"
     },
     "key_feature_item_3_title_section": {
         "eng": "Customer relationship preservation",
@@ -251,12 +251,12 @@
     },
     "final_cta_title_section": {
         "eng": "Ready to boost your sales?",
-        "id": "Siap meningkatkan penjualan Anda?",
-        "cn": "准备好提升你的美妆销售了吗？"
+        "id": "Sudah siap meningkatkan penjualan Anda?",
+        "cn": "准备好提升你的销售了吗？"
     },
     "final_cta_subtitle_section": {
-        "eng": "Start now — let AI work for your beauty business.",
-        "id": "Mulai sekarang — biarkan AI bekerja untuk bisnis kecantikan Anda.",
+        "eng": "Start now — let AI work for your business.",
+        "id": "Biarkan AI menyelesaikan pertumbuhan penjualan untuk Anda.",
         "cn": "让AI为你完成销售增长。"
     },
     "final_cta_button_section": {
