@@ -91,7 +91,7 @@ export default function BaseNavbar({ authenticated }: { authenticated: any }) {
 
                     <div className="flex items-center gap-4 text-sm flex-shrink-0">
                         <div>
-                                <a href="/register"  className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors"><span>Register</span>
+                                <a href="https://system.salesupaisass.com/register"  className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors"><span>Register</span>
                            {/* <Link href="/register" className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">Register</Link> */}
                         </a>
                         </div>

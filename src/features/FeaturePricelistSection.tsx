@@ -35,7 +35,7 @@ export default function FeaturePricelistSection() {
              
                         </ul>
                         <a 
-                            href="/register" 
+                            href="https://system.salesupaisass.com/register" 
                             className="inline-block bg-purple-600 text-white py-3 px-8 rounded-lg font-semibold hover:bg-purple-700 transition-all duration-300 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
                         >
                             {Language(dictionary.pricing_plan_1_cta_section)}
@@ -71,7 +71,7 @@ export default function FeaturePricelistSection() {
                             </li>
                         </ul>
                         <a 
-                            href="/register" 
+                            href="https://system.salesupaisass.com/register" 
                             className="inline-block bg-purple-600 text-white py-3 px-8 rounded-lg font-semibold hover:bg-purple-700 transition-all duration-300 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
                         >
                             {Language(dictionary.pricing_plan_2_cta_section)}
