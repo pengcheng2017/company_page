@@ -1,516 +1,518 @@
 {
-    "home_text_header_menu": {
-        "eng": "HOME",
-        "id": "BERANDA",
-        "cn": "主页"
-    },
-    "features_text_header_menu": {
-        "eng": "FEATURES",
-        "id": "FITUR",
-        "cn": "功能"
-    },
-    "prices_text_header_menu": {
-        "eng": "PRICES",
-        "id": "HARGA",
-        "cn": "价格"
-    },
-    "about_us_text_header_menu": {
-        "eng": "ABOUT US",
-        "id": "TENTANG KAMI",
-        "cn": "关于我们"
-    },
-    "contacts_text_header_menu": {
-        "eng": "CONTACTS",
-        "id": "KONTAK",
-        "cn": "联系方式"
-    },
-    "logo_text": {
-        "eng": "LOGO",
-        "id": "LOGO",
-        "cn": "LOGO"
-    },
-    "title_section": {
-        "eng": "Raise your sales with automatic AI!",
-        "id": "Tingkatkan Penjualan Anda dengan AI Otomatis!",
-        "cn": "用自动化AI提升您的销售!"
-    },
-    "main_title_section": {
-        "eng": "Raise your sales with automatic AI!",
-        "id": "Tingkatkan penjualan  Anda dengan AI otomatis!",
-        "cn": "用自动化AI提升您的销售!"
-    },
-    "main_pre_subtitle_section": {
-        "eng": "Helps to ",
-        "id": "Membantu ",
-        "cn": "帮助 "
-    },
-    "button_change_language_section": {
-        "eng": "Language",
-        "id": "Bahasa",
-        "cn": "中文"
-    },
-    "button_try_now_section": {
-        "eng": "Try Now",
-        "id": "Coba Sekarang",
-        "cn": "立即体验"
-    },
-    "subtitle_section": {
-        "eng": "Build trust, create promo plans, and complete sales-all automatically with salesup.ai",
-        "id": "Membangun kepercayaan, membuat rencana promosi, dan menyelesaikan penjualan - semua secara otomatis dengan salesup.ai",
-        "cn": "建立信任，创建促销计划，完成销售 - 所有这些都可以通过salesup.ai自动完成"
-    },
-    "try_for_free_title_section": {
-        "eng": "Use AI to Automatically Improve Your Sales",
-        "id": "Gunakan AI untuk Meningkatkan Penjualan  Anda Secara Otomatis",
-        "cn": "使用AI自动提升您的销售"
-    },
-    "try_for_free_subtitle_section": {
-        "eng": "SalesUp.AI is an AI-powered omnichannel sales assistant that automates follow-ups, customer chats, and sales activities across WhatsApp and Instagram.",
-        "id": "SalesUp.AI adalah asisten penjualan omnichannel berbasis AI yang mengotomatiskan follow-up, percakapan pelanggan, dan aktivitas penjualan di WhatsApp dan Instagram.",
-        "cn": "SalesUp.AI 是一个由AI驱动的全渠道销售助理，可以自动化WhatsApp和Instagram上的跟进、客户聊天和销售活动。"
-    },
-    "try_for_free_button_section": {
-        "eng": "Try it Now for Free",
-        "id": "Coba Sekarang Gratis",
-        "cn": "立即免费试用"
-    },
-    "key_features_title_section": {
-        "eng": "Key Features",
-        "id": "Fitur Utama",
-        "cn": "核心功能"
-    },
-    "key_features_subtitle_section": {
-        "eng": "Empower your business with our AI-driven features designed to enhance customer engagement and boost sales.",
-        "id": "Memberdayakan bisnis Anda dengan fitur bertenaga AI kami yang dirancang untuk meningkatkan keterlibatan pelanggan dan meningkatkan penjualan.",
-        "cn": "通过我们由AI驱动的功能增强您的业务, 这些功能旨在提升客户参与度并促进销售。"
-    },
-    "key_feature_item_1_title_section": {
-        "eng": "Build automatic trust",
-        "id": "Membangun Kepercayaan Secara Otomatis",
-        "cn": "自动建立信任"
-    },
-    "key_feature_item_1_subtitle_section": {
-        "eng": "AI recognize the type of customer and establish a closer relationship naturally.",
-        "id": "AI mengenali jenis pelanggan dan secara alami membangun hubungan yang lebih dekat.",
-        "cn": "AI识别客户类型,自然建立更紧密的关系。"
-    },
-    "key_feature_item_2_title_section": {
-        "eng": "Automated promo plan",
-        "id": "Rencana Promo Otomatis",
-        "cn": "自动化促销计划"
-    },
-    "key_feature_item_2_subtitle_section": {
-        "eng": "AI creates and sends promotional campaigns according to trends.",
-        "id": "AI membuat dan mengirim promosi berdasarkan tren.",
-        "cn": "AI根据趋势创建并发送促销活动。"
-    },
-    "key_feature_item_3_title_section": {
-        "eng": "Customer relationship preservation",
-        "id": "Pelestarian Hubungan Pelanggan",
-        "cn": "客户关系维护"
-    },
-    "key_feature_item_3_subtitle_section": {
-        "eng": "Send follow-up messages and relevant content without the need for manuals.",
-        "id": "Kirim pesan tindak lanjut dan konten relevan tanpa perlu manual.",
-        "cn": "发送跟进消息和相关内容,无需手动操作。"
-    },
-    "key_feature_item_4_title_section": {
-        "eng": "Auto sales",
-        "id": "Penjualan Otomatis",
-        "cn": "自动销售"
-    },
-    "key_feature_item_4_subtitle_section": {
-        "eng": "AI helps close transactions and improve your store's GMV.",
-        "id": "AI membantu menutup transaksi dan meningkatkan GMV toko Anda.",
-        "cn": "AI帮助完成交易并提高您商店的GMV。"
-    },
-    "how_it_works_title_section": {
-        "eng": "How salesUP.AI Works",
-        "id": "Cara Kerja salesUP.AI",
-        "cn": "salesUP.AI 操作流程"
-    },
-    "how_it_works_subtitle_section": {
-        "eng": "Just 3 simple steps to boost your sales",
-        "id": "Hanya 3 langkah sederhana untuk meningkatkan penjualan Anda",
-        "cn": "只需3个简单步骤即可提升您的销售额"
-    },
-    "how_it_works_step_1_title_section": {
-        "eng": "Connect Your WhatsApp / Instagram",
-        "id": "Hubungkan WhatsApp / Instagram Anda",
-        "cn": "连接你的 WhatsApp 或 Instagram"
-    },
-    "how_it_works_step_1_desc_section": {
-        "eng": "Easily integrate your social media platforms",
-        "id": "Integrasikan dengan mudah platform media sosial Anda",
-        "cn": "轻松集成您的社交媒体平台"
-    },
-    "how_it_works_step_2_title_section": {
-        "eng": "AI Learns Customer Interactions",
-        "id": "AI Mempelajari Interaksi Pelanggan",
-        "cn": "AI 学习客户互动模式"
-    },
-    "how_it_works_step_2_desc_section": {
-        "eng": "AI analyzes communication patterns and customer preferences",
-        "id": "AI menganalisis pola komunikasi dan preferensi pelanggan",
-        "cn": "AI分析客户沟通模式和偏好"
-    },
-    "how_it_works_step_3_title_section": {
-        "eng": "Start Automation & Monitor Results",
-        "id": "Mulai Otomatisasi & Pantau Hasilnya",
-        "cn": "自动运行并监控结果"
-    },
-    "how_it_works_step_3_desc_section": {
-        "eng": "Run campaigns and monitor your sales performance",
-        "id": "Jalankan kampanye dan pantau kinerja penjualan Anda",
-        "cn": "运行营销活动并监控销售表现"
-    },
-    "pricing_title_section": {
-        "eng": "Pricing Plans",
-        "id": "Paket Harga",
-        "cn": "价格方案"
-    },
-    "pricing_subtitle_section": {
-        "eng": "Choose the plan that suits your business needs",
-        "id": "Pilih paket yang sesuai dengan kebutuhan bisnis Anda",
-        "cn": "选择适合您业务需求的套餐"
-    },
-    "pricing_plan_1_name_section": {
-        "eng": "Starter",
-        "id": "Starter",
-        "cn": "免费版"
-    },
-    "pricing_plan_1_price_section": {
-        "eng": "Free",
-        "id": "Gratis",
-        "cn": "免费"
-    },
-    "pricing_plan_1_feature_1_section": {
-        "eng": "Basic features",
-        "id": "Fitur dasar",
-        "cn": "基础功能"
-    },
-    "pricing_plan_1_feature_2_section": {
-        "eng": "100 automated messages per month",
-        "id": "100 pesan otomatis per bulan",
-        "cn": "每月100条自动消息"
-    },
-    "pricing_plan_1_feature_3_section": {
-        "eng": "Email support",
-        "id": "Dukungan email",
-        "cn": "邮件支持"
-    },
-    "pricing_plan_1_cta_section": {
-        "eng": "Try Free",
-        "id": "Coba Gratis",
-        "cn": "免费试用"
-    },
-    "pricing_plan_2_badge_section": {
-        "eng": "Most Popular",
-        "id": "Paling Populer",
-        "cn": "最受欢迎"
-    },
-    "pricing_plan_2_name_section": {
-        "eng": "Pro",
-        "id": "Pro",
-        "cn": "专业版"
-    },
-    "pricing_plan_2_price_section": {
-        "eng": "Rp 2.800.000",
-        "id": "Rp 2.800.000",
-        "cn": "Rp 2.800.000"
-    },
-    "pricing_plan_2_price_period_section": {
-        "eng": "/month",
-        "id": "/bulan",
-        "cn": "/月"
-    },
-    "pricing_plan_2_feature_1_section": {
-        "eng": "All premium features",
-        "id": "Semua fitur premium",
-        "cn": "解锁全部功能"
-    },
-    "pricing_plan_2_feature_2_section": {
-        "eng": "Unlimited automated messages",
-        "id": "Pesan otomatis tidak terbatas",
-        "cn": "无限自动消息"
-    },
-    "pricing_plan_2_feature_3_section": {
-        "eng": "Priority support",
-        "id": "Dukungan prioritas",
-        "cn": "优先客服支持"
-    },
-    "pricing_plan_2_feature_4_section": {
-        "eng": "Advanced analytics",
-        "id": "Analitik lanjutan",
-        "cn": "高级分析"
-    },
-    "pricing_plan_2_cta_section": {
-        "eng": "Start Now",
-        "id": "Mulai Sekarang",
-        "cn": "立即开始"
-    },
-    "final_cta_title_section": {
-        "eng": "Ready to boost your sales?",
-        "id": "Sudah siap meningkatkan penjualan Anda?",
-        "cn": "准备好提升你的销售了吗？"
-    },
-    "final_cta_subtitle_section": {
-        "eng": "Start now — let AI work for your business.",
-        "id": "Biarkan AI menyelesaikan pertumbuhan penjualan untuk Anda.",
-        "cn": "让AI为你完成销售增长。"
-    },
-    "final_cta_button_section": {
-        "eng": "✨ Try Free Now",
-        "id": "✨ Coba Gratis Sekarang",
-        "cn": "✨ 立即免费试用"
-    },
-    "footer_contact_whatsapp_section": {
-        "eng": "WhatsApp: +62 821 1388 7516",
-        "id": "WhatsApp: +62 821 1388 7516",
-        "cn": "WhatsApp: +62 821 1388 7516"
-    },
-    "footer_contact_email_section": {
-        "eng": "Email: hello@salesup.ai",
-        "id": "Email: hello@salesup.ai",
-        "cn": "邮箱: hello@salesup.ai"
-    },
-    "footer_contact_address_section": {
-        "eng": "Address: Jakarta, Indonesia",
-        "id": "Alamat: Jakarta, Indonesia",
-        "cn": "地址: 雅加达, 印度尼西亚"
-    },
-    "footer_privacy_policy_section": {
-        "eng": "Privacy Policy",
-        "id": "Kebijakan Privasi",
-        "cn": "隐私政策"
-    },
-    "footer_terms_of_use_section": {
-        "eng": "Terms of Use",
-        "id": "Syarat Penggunaan",
-        "cn": "使用条款"
-    },
-    "footer_about_us_section": {
-        "eng": "About Us",
-        "id": "Tentang Kami",
-        "cn": "关于我们"
-    },
-    "footer_contact_section": {
-        "eng": "Contact",
-        "id": "Kontak",
-        "cn": "联系我们"
-    },
-    "footer_copyright_section": {
-        "eng": "© 2025 salesUP.AI. All rights reserved.",
-        "id": "© 2025 salesUP.AI. Hak Cipta Dilindungi.",
-        "cn": "© 2025 salesUP.AI。保留所有权利。"
-    },
+  "home_text_header_menu": {
+    "eng": "HOME",
+    "id": "BERANDA",
+    "cn": "主页"
+  },
+  "features_text_header_menu": {
+    "eng": "FEATURES",
+    "id": "FITUR",
+    "cn": "功能"
+  },
+  "prices_text_header_menu": {
+    "eng": "PRICES",
+    "id": "HARGA",
+    "cn": "价格"
+  },
+  "about_us_text_header_menu": {
+    "eng": "ABOUT US",
+    "id": "TENTANG KAMI",
+    "cn": "关于我们"
+  },
+  "contacts_text_header_menu": {
+    "eng": "CONTACTS",
+    "id": "KONTAK",
+    "cn": "联系方式"
+  },
+  "logo_text": {
+    "eng": "LOGO",
+    "id": "LOGO",
+    "cn": "LOGO"
+  },
+  "title_section": {
+    "eng": "Raise your sales with automatic AI!",
+    "id": "Tingkatkan Penjualan Anda dengan AI Otomatis!",
+    "cn": "用自动化AI提升您的销售!"
+  },
+  "main_title_section": {
+    "eng": "Raise your sales with automatic AI!",
+    "id": "Tingkatkan penjualan  Anda dengan AI otomatis!",
+    "cn": "用自动化AI提升您的销售!"
+  },
+  "main_pre_subtitle_section": {
+    "eng": "Helps to ",
+    "id": "Membantu ",
+    "cn": "帮助 "
+  },
+  "button_change_language_section": {
+    "eng": "Language",
+    "id": "Bahasa",
+    "cn": "中文"
+  },
+  "button_try_now_section": {
+    "eng": "Try Now",
+    "id": "Coba Sekarang",
+    "cn": "立即体验"
+  },
+  "subtitle_section": {
+    "eng": "Build trust, create promo plans, and complete sales-all automatically with salesup.ai",
+    "id": "Membangun kepercayaan, membuat rencana promosi, dan menyelesaikan penjualan - semua secara otomatis dengan salesup.ai",
+    "cn": "建立信任，创建促销计划，完成销售 - 所有这些都可以通过salesup.ai自动完成"
+  },
+  "try_for_free_title_section": {
+    "eng": "Use AI to Automatically Improve Your Sales",
+    "id": "Gunakan AI untuk Meningkatkan Penjualan  Anda Secara Otomatis",
+    "cn": "使用AI自动提升您的销售"
+  },
+  "try_for_free_subtitle_section": {
+    "eng": "SalesUp.AI is an AI-powered omnichannel sales assistant that automates follow-ups, customer chats, and sales activities across WhatsApp and Instagram.",
+    "id": "SalesUp.AI adalah asisten penjualan omnichannel berbasis AI yang mengotomatiskan follow-up, percakapan pelanggan, dan aktivitas penjualan di WhatsApp dan Instagram.",
+    "cn": "SalesUp.AI 是一个由AI驱动的全渠道销售助理，可以自动化WhatsApp和Instagram上的跟进、客户聊天和销售活动。"
+  },
+  "try_for_free_button_section": {
+    "eng": "Try it Now for Free",
+    "id": "Coba Sekarang Gratis",
+    "cn": "立即免费试用"
+  },
+  "key_features_title_section": {
+    "eng": "Key Features",
+    "id": "Fitur Utama",
+    "cn": "核心功能"
+  },
+  "key_features_subtitle_section": {
+    "eng": "Empower your business with our AI-driven features designed to enhance customer engagement and boost sales.",
+    "id": "Memberdayakan bisnis Anda dengan fitur bertenaga AI kami yang dirancang untuk meningkatkan keterlibatan pelanggan dan meningkatkan penjualan.",
+    "cn": "通过我们由AI驱动的功能增强您的业务, 这些功能旨在提升客户参与度并促进销售。"
+  },
+  "key_feature_item_1_title_section": {
+    "eng": "Build automatic trust",
+    "id": "Membangun Kepercayaan Secara Otomatis",
+    "cn": "自动建立信任"
+  },
+  "key_feature_item_1_subtitle_section": {
+    "eng": "AI recognize the type of customer and establish a closer relationship naturally.",
+    "id": "AI mengenali jenis pelanggan dan secara alami membangun hubungan yang lebih dekat.",
+    "cn": "AI识别客户类型,自然建立更紧密的关系。"
+  },
+  "key_feature_item_2_title_section": {
+    "eng": "Automated promo plan",
+    "id": "Rencana Promo Otomatis",
+    "cn": "自动化促销计划"
+  },
+  "key_feature_item_2_subtitle_section": {
+    "eng": "AI creates and sends promotional campaigns according to trends.",
+    "id": "AI membuat dan mengirim promosi berdasarkan tren.",
+    "cn": "AI根据趋势创建并发送促销活动。"
+  },
+  "key_feature_item_3_title_section": {
+    "eng": "Customer relationship preservation",
+    "id": "Menjaga hubungan dengan pelanggan",
+    "cn": "客户关系维护"
+  },
+  "key_feature_item_3_subtitle_section": {
+    "eng": "Send follow-up messages and relevant content without the need for manuals.",
+    "id": "Kirim pesan follow-up dan konten relevan tanpa perlu dilakukan secara manual.",
+    "cn": "发送跟进消息和相关内容,无需手动操作。"
+  },
+  "key_feature_item_4_title_section": {
+    "eng": "Auto sales",
+    "id": "Penjualan Otomatis",
+    "cn": "自动销售"
+  },
+  "key_feature_item_4_subtitle_section": {
+    "eng": "AI helps close transactions and improve your store's GMV.",
+    "id": "AI membantu closing transaksi dan meningkatkan GMV toko Anda.",
+    "cn": "AI帮助完成交易并提高您商店的GMV。"
+  },
+  "how_it_works_title_section": {
+    "eng": "How salesUP.AI Works",
+    "id": "Cara Kerja salesUP.AI",
+    "cn": "salesUP.AI 操作流程"
+  },
+  "how_it_works_subtitle_section": {
+    "eng": "Just 3 simple steps to boost your sales",
+    "id": "Hanya 3 langkah sederhana untuk meningkatkan penjualan Anda",
+    "cn": "只需3个简单步骤即可提升您的销售额"
+  },
+  "how_it_works_step_1_title_section": {
+    "eng": "Connect Your WhatsApp / Instagram",
+    "id": "Hubungkan WhatsApp / Instagram Anda",
+    "cn": "连接你的 WhatsApp 或 Instagram"
+  },
+  "how_it_works_step_1_desc_section": {
+    "eng": "Easily integrate your social media platforms",
+    "id": "Integrasikan dengan mudah platform media sosial Anda",
+    "cn": "轻松集成您的社交媒体平台"
+  },
+  "how_it_works_step_2_title_section": {
+    "eng": "AI Learns Customer Interactions",
+    "id": "AI Mempelajari Interaksi Pelanggan",
+    "cn": "AI 学习客户互动模式"
+  },
+  "how_it_works_step_2_desc_section": {
+    "eng": "AI analyzes communication patterns and customer preferences",
+    "id": "AI menganalisis pola komunikasi dan preferensi pelanggan",
+    "cn": "AI分析客户沟通模式和偏好"
+  },
+  "how_it_works_step_3_title_section": {
+    "eng": "Start Automation & Monitor Results",
+    "id": "Mulai Otomatisasi & Pantau Hasilnya",
+    "cn": "自动运行并监控结果"
+  },
+  "how_it_works_step_3_desc_section": {
+    "eng": "Run campaigns and monitor your sales performance",
+    "id": "Jalankan promosi dan pantau kinerja penjualan Anda",
+    "cn": "运行营销活动并监控销售表现"
+  },
+  "pricing_title_section": {
+    "eng": "Pricing Plans",
+    "id": "Paket Harga",
+    "cn": "价格方案"
+  },
+  "pricing_subtitle_section": {
+    "eng": "Choose the plan that suits your business needs",
+    "id": "Pilih paket yang sesuai dengan kebutuhan bisnis Anda",
+    "cn": "选择适合您业务需求的套餐"
+  },
+  "pricing_plan_1_name_section": {
+    "eng": "Starter",
+    "id": "Starter",
+    "cn": "免费版"
+  },
+  "pricing_plan_1_price_section": {
+    "eng": "Free",
+    "id": "Gratis",
+    "cn": "免费"
+  },
+  "pricing_plan_1_feature_1_section": {
+    "eng": "Basic features",
+    "id": "Fitur dasar",
+    "cn": "基础功能"
+  },
+  "pricing_plan_1_feature_2_section": {
+    "eng": "100 automated messages per month",
+    "id": "100 pesan otomatis per bulan",
+    "cn": "每月100条自动消息"
+  },
+  "pricing_plan_1_feature_3_section": {
+    "eng": "Email support",
+    "id": "Dukungan email",
+    "cn": "邮件支持"
+  },
+  "pricing_plan_1_cta_section": {
+    "eng": "Try Free",
+    "id": "Coba Gratis",
+    "cn": "免费试用"
+  },
+  "pricing_plan_2_badge_section": {
+    "eng": "Most Popular",
+    "id": "Paling Populer",
+    "cn": "最受欢迎"
+  },
+  "pricing_plan_2_name_section": {
+    "eng": "Pro",
+    "id": "Pro",
+    "cn": "专业版"
+  },
+  "pricing_plan_2_price_section": {
+    "eng": "Rp 2.800.000",
+    "id": "Rp 2.800.000",
+    "cn": "Rp 2.800.000"
+  },
+  "pricing_plan_2_price_period_section": {
+    "eng": "/month",
+    "id": "/bulan",
+    "cn": "/月"
+  },
+  "pricing_plan_2_feature_1_section": {
+    "eng": "All premium features",
+    "id": "Semua fitur premium",
+    "cn": "解锁全部功能"
+  },
+  "pricing_plan_2_feature_2_section": {
+    "eng": "Unlimited automated messages",
+    "id": "Pesan otomatis tidak terbatas",
+    "cn": "无限自动消息"
+  },
+  "pricing_plan_2_feature_3_section": {
+    "eng": "Priority support",
+    "id": "Dukungan prioritas",
+    "cn": "优先客服支持"
+  },
+  "pricing_plan_2_feature_4_section": {
+    "eng": "Advanced analytics",
+    "id": "Analitik lanjutan",
+    "cn": "高级分析"
+  },
+  "pricing_plan_2_cta_section": {
+    "eng": "Start Now",
+    "id": "Mulai Sekarang",
+    "cn": "立即开始"
+  },
+  "final_cta_title_section": {
+    "eng": "Ready to boost your sales?",
+    "id": "Sudah siap meningkatkan penjualan Anda?",
+    "cn": "准备好提升你的销售了吗？"
+  },
+  "final_cta_subtitle_section": {
+    "eng": "Start now — let AI work for your business.",
+    "id": "Biarkan AI menyelesaikan pertumbuhan penjualan untuk Anda.",
+    "cn": "让AI为你完成销售增长。"
+  },
+  "final_cta_button_section": {
+    "eng": "✨ Try Free Now",
+    "id": "✨ Coba Gratis Sekarang",
+    "cn": "✨ 立即免费试用"
+  },
+  "footer_contact_whatsapp_section": {
+    "eng": "WhatsApp: +62 821 1388 7516",
+    "id": "WhatsApp: +62 821 1388 7516",
+    "cn": "WhatsApp: +62 821 1388 7516"
+  },
+  "footer_contact_email_section": {
+    "eng": "Email: hello@salesup.ai",
+    "id": "Email: hello@salesup.ai",
+    "cn": "邮箱: hello@salesup.ai"
+  },
+  "footer_contact_address_section": {
+    "eng": "Address: Jakarta, Indonesia",
+    "id": "Alamat: Jakarta, Indonesia",
+    "cn": "地址: 雅加达, 印度尼西亚"
+  },
+  "footer_privacy_policy_section": {
+    "eng": "Privacy Policy",
+    "id": "Kebijakan Privasi",
+    "cn": "隐私政策"
+  },
+  "footer_terms_of_use_section": {
+    "eng": "Terms of Use",
+    "id": "Syarat Penggunaan",
+    "cn": "使用条款"
+  },
+  "footer_about_us_section": {
+    "eng": "About Us",
+    "id": "Tentang Kami",
+    "cn": "关于我们"
+  },
+  "footer_contact_section": {
+    "eng": "Contact",
+    "id": "Kontak",
+    "cn": "联系我们"
+  },
+  "footer_copyright_section": {
+    "eng": "© 2025 salesUP.AI. All rights reserved.",
+    "id": "© 2025 salesUP.AI. Hak Cipta Dilindungi.",
+    "cn": "© 2025 salesUP.AI。保留所有权利。"
+  },
 
-    "core_functionality_section": {
-        "eng": "core functionality",
-        "id": "Fitur Utama",
-        "cn": "核心功能"
-    },
-    "experience_sales_up_ai_section": {
-        "eng": "experience SalesUpAi",
-        "id": "Coba SalesUp Ai",
-        "cn": "体验SalesUpAi"
-    },
-    "developer_section": {
-        "eng": "developer",
-        "id": "Pengembang",
-        "cn": "开发者"
-    },
-    "growth_intelligence_agency_section": {
-        "eng": "Growth Intelligence Agency",
-        "id": "Fitur Utama",
-        "cn": "增长情报局"
-    },
-    "practical_guide_section": {
-        "eng": "Practical Guide",
-        "id": "Panduan Praktis",
-        "cn": "实践指南"
-    },
-    "solution_section": {
-        "eng": "Solution",
-        "id": "Solusi",
-        "cn": "解决方案"
-    },
-    "main_features_section": {
-        "eng": "Main Features",
-        "id": "Fitur Utama",
-        "cn": "核心功能"
-    },
-    "products_and_services_section": {
-        "eng": "Products and Services",
-        "id": "Produk & Layanan",
-        "cn": "产品与服务"
-    },
-    "try_it_now_section": {
-        "eng": "Try it now",
-        "id": "Coba Sekarang",
-        "cn": "立即体验"
-    },
-    "login_and_registration_section": {
-        "eng": "Login and Registration",
-        "id": "Masuk & Daftar",
-        "cn": "登录与注册"
-    },
-    "appointment_consultation_section": {
-        "eng": "appointment consultation",
-        "id": "Janji Konsultasi",
-        "cn": "预约咨询"
-    },
-    "contact_us_experts_section": {
-        "eng": "Have you encountered any problems? Click on the avatar to chat with PE experts",
-        "id": "Ada masalah? Klik avatar untuk chat dengan ahli PE",
-        "cn": "遇到问题了吗? 点击头像和PE专家聊聊"
-    },
-    "talk_to_me_section": {
-        "eng": "Talk to me",
-        "id": "Bicara dengan Saya",
-        "cn": "与我对话"
-    },
-    "contact_us_section": {
-        "eng": "contact us",
-        "id": "Hubungi Kami",
-        "cn": "联系我们"
-    },
-    "platform_integration_section": {
-        "eng": "Platform Integration",
-        "id": "Integrasi Platform",
-        "cn": "平台接入"
-    },
-    "our_clients_section": {
-        "eng": "Our Clients",
-        "id": "Klien Kami",
-        "cn": "我们的客户"
-    },
-    "information_security_section": {
-        "eng": "Information Security",
-        "id": "Keamanan Informasi",
-        "cn": "信息安全保障"
-    },
-    "try_now_section": {
-        "eng": "Try Now",
-        "id": "Coba Sekarang",
-        "cn": "立即体验"
-    },
-    "client_cases_section": {
-        "eng": "Client Cases",
-        "id": "Kasus Klien",
-        "cn": "客户案例"
-    },
-    "client_stories_section": {
-        "eng": "Client Stories",
-        "id": "Cerita Klien",
-        "cn": "客户故事"
-    },
-    "training_and_public_courses_section": {
-        "eng": "Training & Public Courses",
-        "id": "Pelatihan & Kelas Terbuka",
-        "cn": "培训与公开课"
-    },
-    "open_source_projects_section": {
-        "eng": "Open Source Projects",
-        "id": "Proyek Sumber Terbuka",
-        "cn": "开源项目"
-    },
-    "join_us_section": {
-        "eng": "Join Us",
-        "id": "Bergabung dengan Kami",
-        "cn": "加入我们"
-    },
-    "user_agreement_section": {
-        "eng": "User Agreement",
-        "id": "Perjanjian Pengguna",
-        "cn": "用户协议"
-    },
-    "company_address_section": {
-        "eng": "Company Address",
-        "id": "Alamat Perusahaan",
-        "cn": "公司地址"
-    },
-    "company_culture_section": {
-        "eng": "Company Culture",
-        "id": "Budaya Perusahaan",
-        "cn": "公司文化"
-    },
-    "build_an_expert_digital_workforce_section": {
-        "eng": "Build an expert digital workforce through the integrated platform of intelligent and digital operation services + Al",
-        "id": "Platform AI Agentic tingkat perusahaan untuk membangun matriks karyawan AI dengan kinerja ahli",
-        "cn": "企业级Agentic AI员工平台, 打造AI员工矩阵, 交付专家级业务表现"
-    },
-    "join_our_extensive_list_of_clients_section": {
-        "eng": "Join our extensive list of clients from a variety of industries",
-        "id": "Daftar klien berikut tanpa urutan tertentu",
-        "cn": "以下客户排名不分先后"
-    },
-    "our_product_section": {
-        "eng": "Our product",
-        "id": "Komponen Produk",
-        "cn": "产品组成"
-    },
-    "ai_human_collaboration_platform_section": {
-        "eng": "AI Human Collaboration Platform",
-        "id": "Platform Terpadu Kolaborasi AI & Manusia",
-        "cn": "AI人机协作一体化平台"
-    },
-    "salesup_ai_product_section": {
-        "eng": "SalesUp.Ai Product",
-        "id": "Produk SalesUp.Ai",
-        "cn": "SalesUp.Ai产品"
-    },
-    "salesup_ai_model_section": {
-        "eng": "SalesUp.Ai Model",
-        "id": "Model SalesUp.Ai",
-        "cn": "SalesUp.Ai大模型"
-    },
-    "register_section": {
-        "eng": "Start Your Intelligent Sales Journey",
-        "id": "Mulailah Perjalanan Penjualan Cerdas Anda",
-        "cn": "开启您的智能销售之旅"
-    },
-    "register_username_section": {
-        "eng": "Account",
-        "id": "Akun",
-        "cn": "账户名"
-    },
-    "register_phone_section": {
-        "eng": "Phone",
-        "id": "Telepon",
-        "cn": "电话号码"
-    },
-    "register_invitation_code_section": {
-        "eng": "Invitation Code",
-        "id": "Kode Undangan",
-        "cn": "邀请码"
-    },
-    "register_password_section": {
-        "eng": "Password",
-        "id": "Kata sandi",
-        "cn": "密码"
-    },
-    "register_confirm_password_section": {
-        "eng": "Confirm Password",
-        "id": "Konfirmasi Kata Sandi",
-        "cn": "确认密码"
-    },
-    "register_enter_username_section": {
-        "eng": "Enter your account name",
-        "id": "Masukkan nama akun Anda",
-        "cn": "输入你的账户名"
-    },
-    "register_enter_phone_number_section": {
-        "eng": "Enter your phone number",
-        "id": "Masukkan nomor telepon Anda",
-        "cn": "输入你的电话号码"
-    },    "register_enter_password_section": {
-        "eng": "Enter your password",
-        "id": "Masukkan kata sandi Anda",
-        "cn": "输入你的输入你的密码电话号码"
-    },    "register_re_enter_password_section": {
-        "eng": "Re-enter your password",
-        "id": "Masukkan ulang kata sandi Anda",
-        "cn": "再次输入你的密码"
-    }
+  "core_functionality_section": {
+    "eng": "core functionality",
+    "id": "Fitur Utama",
+    "cn": "核心功能"
+  },
+  "experience_sales_up_ai_section": {
+    "eng": "experience SalesUpAi",
+    "id": "Coba SalesUp Ai",
+    "cn": "体验SalesUpAi"
+  },
+  "developer_section": {
+    "eng": "developer",
+    "id": "Pengembang",
+    "cn": "开发者"
+  },
+  "growth_intelligence_agency_section": {
+    "eng": "Growth Intelligence Agency",
+    "id": "Fitur Utama",
+    "cn": "增长情报局"
+  },
+  "practical_guide_section": {
+    "eng": "Practical Guide",
+    "id": "Panduan Praktis",
+    "cn": "实践指南"
+  },
+  "solution_section": {
+    "eng": "Solution",
+    "id": "Solusi",
+    "cn": "解决方案"
+  },
+  "main_features_section": {
+    "eng": "Main Features",
+    "id": "Fitur Utama",
+    "cn": "核心功能"
+  },
+  "products_and_services_section": {
+    "eng": "Products and Services",
+    "id": "Produk & Layanan",
+    "cn": "产品与服务"
+  },
+  "try_it_now_section": {
+    "eng": "Try it now",
+    "id": "Coba Sekarang",
+    "cn": "立即体验"
+  },
+  "login_and_registration_section": {
+    "eng": "Login and Registration",
+    "id": "Masuk & Daftar",
+    "cn": "登录与注册"
+  },
+  "appointment_consultation_section": {
+    "eng": "appointment consultation",
+    "id": "Janji Konsultasi",
+    "cn": "预约咨询"
+  },
+  "contact_us_experts_section": {
+    "eng": "Have you encountered any problems? Click on the avatar to chat with PE experts",
+    "id": "Ada masalah? Klik avatar untuk chat dengan ahli PE",
+    "cn": "遇到问题了吗? 点击头像和PE专家聊聊"
+  },
+  "talk_to_me_section": {
+    "eng": "Talk to me",
+    "id": "Bicara dengan Saya",
+    "cn": "与我对话"
+  },
+  "contact_us_section": {
+    "eng": "contact us",
+    "id": "Hubungi Kami",
+    "cn": "联系我们"
+  },
+  "platform_integration_section": {
+    "eng": "Platform Integration",
+    "id": "Integrasi Platform",
+    "cn": "平台接入"
+  },
+  "our_clients_section": {
+    "eng": "Our Clients",
+    "id": "Klien Kami",
+    "cn": "我们的客户"
+  },
+  "information_security_section": {
+    "eng": "Information Security",
+    "id": "Keamanan Informasi",
+    "cn": "信息安全保障"
+  },
+  "try_now_section": {
+    "eng": "Try Now",
+    "id": "Coba Sekarang",
+    "cn": "立即体验"
+  },
+  "client_cases_section": {
+    "eng": "Client Cases",
+    "id": "Kasus Klien",
+    "cn": "客户案例"
+  },
+  "client_stories_section": {
+    "eng": "Client Stories",
+    "id": "Cerita Klien",
+    "cn": "客户故事"
+  },
+  "training_and_public_courses_section": {
+    "eng": "Training & Public Courses",
+    "id": "Pelatihan & Kelas Terbuka",
+    "cn": "培训与公开课"
+  },
+  "open_source_projects_section": {
+    "eng": "Open Source Projects",
+    "id": "Proyek Sumber Terbuka",
+    "cn": "开源项目"
+  },
+  "join_us_section": {
+    "eng": "Join Us",
+    "id": "Bergabung dengan Kami",
+    "cn": "加入我们"
+  },
+  "user_agreement_section": {
+    "eng": "User Agreement",
+    "id": "Perjanjian Pengguna",
+    "cn": "用户协议"
+  },
+  "company_address_section": {
+    "eng": "Company Address",
+    "id": "Alamat Perusahaan",
+    "cn": "公司地址"
+  },
+  "company_culture_section": {
+    "eng": "Company Culture",
+    "id": "Budaya Perusahaan",
+    "cn": "公司文化"
+  },
+  "build_an_expert_digital_workforce_section": {
+    "eng": "Build an expert digital workforce through the integrated platform of intelligent and digital operation services + Al",
+    "id": "Platform AI Agentic tingkat perusahaan untuk membangun matriks karyawan AI dengan kinerja ahli",
+    "cn": "企业级Agentic AI员工平台, 打造AI员工矩阵, 交付专家级业务表现"
+  },
+  "join_our_extensive_list_of_clients_section": {
+    "eng": "Join our extensive list of clients from a variety of industries",
+    "id": "Daftar klien berikut tanpa urutan tertentu",
+    "cn": "以下客户排名不分先后"
+  },
+  "our_product_section": {
+    "eng": "Our product",
+    "id": "Komponen Produk",
+    "cn": "产品组成"
+  },
+  "ai_human_collaboration_platform_section": {
+    "eng": "AI Human Collaboration Platform",
+    "id": "Platform Terpadu Kolaborasi AI & Manusia",
+    "cn": "AI人机协作一体化平台"
+  },
+  "salesup_ai_product_section": {
+    "eng": "SalesUp.Ai Product",
+    "id": "Produk SalesUp.Ai",
+    "cn": "SalesUp.Ai产品"
+  },
+  "salesup_ai_model_section": {
+    "eng": "SalesUp.Ai Model",
+    "id": "Model SalesUp.Ai",
+    "cn": "SalesUp.Ai大模型"
+  },
+  "register_section": {
+    "eng": "Start Your Intelligent Sales Journey",
+    "id": "Mulailah Perjalanan Penjualan Cerdas Anda",
+    "cn": "开启您的智能销售之旅"
+  },
+  "register_username_section": {
+    "eng": "Account",
+    "id": "Akun",
+    "cn": "账户名"
+  },
+  "register_phone_section": {
+    "eng": "Phone",
+    "id": "Telepon",
+    "cn": "电话号码"
+  },
+  "register_invitation_code_section": {
+    "eng": "Invitation Code",
+    "id": "Kode Undangan",
+    "cn": "邀请码"
+  },
+  "register_password_section": {
+    "eng": "Password",
+    "id": "Kata sandi",
+    "cn": "密码"
+  },
+  "register_confirm_password_section": {
+    "eng": "Confirm Password",
+    "id": "Konfirmasi Kata Sandi",
+    "cn": "确认密码"
+  },
+  "register_enter_username_section": {
+    "eng": "Enter your account name",
+    "id": "Masukkan nama akun Anda",
+    "cn": "输入你的账户名"
+  },
+  "register_enter_phone_number_section": {
+    "eng": "Enter your phone number",
+    "id": "Masukkan nomor telepon Anda",
+    "cn": "输入你的电话号码"
+  },
+  "register_enter_password_section": {
+    "eng": "Enter your password",
+    "id": "Masukkan kata sandi Anda",
+    "cn": "输入你的输入你的密码电话号码"
+  },
+  "register_re_enter_password_section": {
+    "eng": "Re-enter your password",
+    "id": "Masukkan ulang kata sandi Anda",
+    "cn": "再次输入你的密码"
+  }
 }

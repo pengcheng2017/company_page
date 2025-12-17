@@ -8,34 +8,38 @@ import FeaturePricelistSection from "@/features/FeaturePricelistSection";
 
 interface Params {
   params: {
-    locale: string
-  }
+    locale: string;
+  };
 }
 
-export async function generateMetadata({ params: { locale } }: Params): Promise<Metadata> {
-
+export async function generateMetadata({
+  params: { locale },
+}: Params): Promise<Metadata> {
   return {
     robots: {
       index: true,
       follow: true,
       googleBot: {
         index: true,
-        follow: true
-      }
+        follow: true,
+      },
     },
-    title: "SALESUP AI - Raise your beauty sales with automatic AI!",
-    description: "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
+    title: "SALESUP AI - Raise your sales with automatic AI!",
+    description:
+      "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
     twitter: {
-      title: "SALESUP AI - Raise your beauty sales with automatic AI!",
-      description: "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
+      title: "SALESUP AI - Raise your sales with automatic AI!",
+      description:
+        "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
       // images: baseURL + images.small.url
     },
     openGraph: {
-      title: "SALESUP AI - Raise your beauty sales with automatic AI!",
-      description: "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
+      title: "SALESUP AI - Raise your sales with automatic AI!",
+      description:
+        "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
       // images: newImages
-    }
-  }
+    },
+  };
 }
 
 export default function HomePage() {
@@ -43,10 +47,10 @@ export default function HomePage() {
     <>
       {/* <LogAnalytics eventName="page_view" eventParams={{ page: "home" }} /> */}
 
-
-      <FeatureJumbotronSection /><FeatureHowItWorksSection /><FeaturePricelistSection /><FeatureBottomCTASection />
-      
-      
+      <FeatureJumbotronSection />
+      <FeatureHowItWorksSection />
+      <FeaturePricelistSection />
+      <FeatureBottomCTASection />
     </>
   );
 }
