@@ -16,10 +16,10 @@ export default function FeatureOurClientsSection() {
     ];
 
     return (
-        <section className="py-20 bg-white overflow-hidden">
+        <section className="py-20 bg-surface overflow-hidden">
             <div className="max-w-[1200px] mx-auto px-6">
-                <h2 className="text-4xl font-semibold text-center text-gray-800 mb-4">Our Clients</h2>
-                <p className="text-center text-gray-600 mb-12">
+                <h2 className="text-4xl font-semibold text-center text-ink mb-4">Our Clients</h2>
+                <p className="text-center text-ink-muted mb-12">
                     Join our extensive list of clients from a variety of industries
                 </p>
 

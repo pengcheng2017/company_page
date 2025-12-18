@@ -1,27 +1,33 @@
 {
   "home_text_header_menu": {
-    "eng": "HOME",
-    "id": "BERANDA",
+    "eng": "Home",
+    "id": "Beranda",
     "cn": "主页"
   },
   "features_text_header_menu": {
-    "eng": "FEATURES",
-    "id": "FITUR",
+    "eng": "Features",
+    "id": "Fitur",
     "cn": "功能"
   },
   "prices_text_header_menu": {
-    "eng": "PRICES",
-    "id": "HARGA",
+    "eng": "Prices",
+    "id": "Harga",
     "cn": "价格"
   },
+  "how_it_works_text_header_menu": {
+    "eng": "How it Works",
+    "id": "Cara Kerja",
+    "cn": "价格"
+  },
+
   "about_us_text_header_menu": {
-    "eng": "ABOUT US",
-    "id": "TENTANG KAMI",
+    "eng": "About Us",
+    "id": "Tentang Kami",
     "cn": "关于我们"
   },
   "contacts_text_header_menu": {
-    "eng": "CONTACTS",
-    "id": "KONTAK",
+    "eng": "Contacts",
+    "id": "Kontak",
     "cn": "联系方式"
   },
   "logo_text": {
@@ -49,6 +55,12 @@
     "id": "Bahasa",
     "cn": "中文"
   },
+  "register_button_section": {
+    "eng": "Register",
+    "id": "Daftar",
+    "cn": "功能"
+  },
+
   "button_try_now_section": {
     "eng": "Try Now",
     "id": "Coba Sekarang",
@@ -65,14 +77,44 @@
     "cn": "使用AI自动提升您的销售"
   },
   "try_for_free_subtitle_section": {
-    "eng": "SalesUp.AI is an AI-powered omnichannel sales assistant that automates follow-ups, customer chats, and sales activities across WhatsApp and Instagram.",
-    "id": "SalesUp.AI adalah asisten penjualan omnichannel berbasis AI yang mengotomatiskan follow-up, percakapan pelanggan, dan aktivitas penjualan di WhatsApp dan Instagram.",
-    "cn": "SalesUp.AI 是一个由AI驱动的全渠道销售助理，可以自动化WhatsApp和Instagram上的跟进、客户聊天和销售活动。"
+    "eng": "SalesUp.AI is an AI-powered omnichannel sales assistant that automates follow-ups, customer chats, and sales activities across WhatsApp.",
+    "id": "SalesUp.AI adalah asisten penjualan omnichannel berbasis AI yang mengotomatiskan follow-up, percakapan pelanggan, dan aktivitas penjualan di WhatsApp.",
+    "cn": "SalesUp.AI 是一个由AI驱动的全渠道销售助理，可以自动化WhatsApp上的跟进、客户聊天和销售活动。"
   },
   "try_for_free_button_section": {
     "eng": "Try it Now for Free",
     "id": "Coba Sekarang Gratis",
     "cn": "立即免费试用"
+  },
+  "learn_more_section": {
+    "eng": "Learn more",
+    "id": "Pelajari lebih lanjut",
+    "cn": "了解更多"
+  },
+  "jumbotron_sales_performance_label": {
+    "eng": "Sales Performance",
+    "id": "Performa Penjualan",
+    "cn": "销售表现"
+  },
+  "jumbotron_this_month_label": {
+    "eng": "This Month",
+    "id": "Bulan Ini",
+    "cn": "本月"
+  },
+  "jumbotron_ai_assistant_label": {
+    "eng": "AI Assistant",
+    "id": "Asisten AI",
+    "cn": "AI 助手"
+  },
+  "jumbotron_ai_lead_message": {
+    "eng": "New lead detected! Ready to engage...",
+    "id": "Lead baru terdeteksi! Siap untuk berinteraksi...",
+    "cn": "发现新线索！准备互动..."
+  },
+  "jumbotron_active_users_label": {
+    "eng": "Active Users",
+    "id": "Pengguna Aktif",
+    "cn": "活跃用户"
   },
   "key_features_title_section": {
     "eng": "Key Features",
@@ -135,9 +177,9 @@
     "cn": "只需3个简单步骤即可提升您的销售额"
   },
   "how_it_works_step_1_title_section": {
-    "eng": "Connect Your WhatsApp / Instagram",
-    "id": "Hubungkan WhatsApp / Instagram Anda",
-    "cn": "连接你的 WhatsApp 或 Instagram"
+    "eng": "Connect Your WhatsApp ",
+    "id": "Hubungkan WhatsApp ",
+    "cn": "连接你的 WhatsApp "
   },
   "how_it_works_step_1_desc_section": {
     "eng": "Easily integrate your social media platforms",
@@ -163,6 +205,76 @@
     "eng": "Run campaigns and monitor your sales performance",
     "id": "Jalankan promosi dan pantau kinerja penjualan Anda",
     "cn": "运行营销活动并监控销售表现"
+  },
+  "how_it_works_step_label": {
+    "eng": "Step",
+    "id": "Langkah",
+    "cn": "步骤"
+  },
+  "how_it_works_connect_success_label": {
+    "eng": "Connected Successfully",
+    "id": "Berhasil Terhubung",
+    "cn": "连接成功"
+  },
+  "how_it_works_connect_success_desc": {
+    "eng": "Your accounts are now linked and ready for AI automation",
+    "id": "Akun Anda sudah terhubung dan siap untuk otomatisasi AI",
+    "cn": "您的账号已连接，已准备好进行 AI 自动化"
+  },
+  "how_it_works_learn_metric_1_label": {
+    "eng": "Conversation Patterns",
+    "id": "Pola Percakapan",
+    "cn": "对话模式"
+  },
+  "how_it_works_learn_metric_2_label": {
+    "eng": "Customer Preferences",
+    "id": "Preferensi Pelanggan",
+    "cn": "客户偏好"
+  },
+  "how_it_works_learn_metric_3_label": {
+    "eng": "Response Timing",
+    "id": "Waktu Respons",
+    "cn": "响应时机"
+  },
+  "how_it_works_learn_metric_4_label": {
+    "eng": "Sentiment Analysis",
+    "id": "Analisis Sentimen",
+    "cn": "情感分析"
+  },
+  "how_it_works_automate_stat_1_label": {
+    "eng": "Messages Sent",
+    "id": "Pesan Terkirim",
+    "cn": "已发送消息"
+  },
+  "how_it_works_automate_stat_2_label": {
+    "eng": "Conversions",
+    "id": "Konversi",
+    "cn": "转化"
+  },
+  "how_it_works_automate_stat_3_label": {
+    "eng": "Revenue",
+    "id": "Pendapatan",
+    "cn": "收入"
+  },
+  "how_it_works_automate_active_label": {
+    "eng": "Automation Active",
+    "id": "Otomasi Aktif",
+    "cn": "自动化已启用"
+  },
+  "how_it_works_automate_active_desc": {
+    "eng": "AI is handling all customer interactions",
+    "id": "AI menangani semua interaksi pelanggan",
+    "cn": "AI 正在处理所有客户互动"
+  },
+  "how_it_works_automate_performance_label": {
+    "eng": "Today's Performance",
+    "id": "Performa Hari Ini",
+    "cn": "今日表现"
+  },
+  "how_it_works_automate_performance_delta": {
+    "eng": "+24% vs yesterday",
+    "id": "+24% dibanding kemarin",
+    "cn": "较昨日 +24%"
   },
   "pricing_title_section": {
     "eng": "Pricing Plans",
@@ -255,14 +367,14 @@
     "cn": "准备好提升你的销售了吗？"
   },
   "final_cta_subtitle_section": {
-    "eng": "Start now — let AI work for your business.",
-    "id": "Biarkan AI menyelesaikan pertumbuhan penjualan untuk Anda.",
+    "eng": "Start now - let AI work for your business.",
+    "id": "Mulai sekarang - biarkan AI bekerja untuk bisnis Anda.",
     "cn": "让AI为你完成销售增长。"
   },
   "final_cta_button_section": {
-    "eng": "✨ Try Free Now",
-    "id": "✨ Coba Gratis Sekarang",
-    "cn": "✨ 立即免费试用"
+    "eng": "Try Free Now",
+    "id": "Coba Gratis Sekarang",
+    "cn": "立即免费试用"
   },
   "footer_contact_whatsapp_section": {
     "eng": "WhatsApp: +62 821 1388 7516",

@@ -3,8 +3,8 @@ import FeatureJumbotronSection from "@/features/FeatureJumbotronSection";
 import FeatureOurClientsSection from "@/features/FeatureOurClientsSection";
 import FeatureBottomCTASection from "@/features/FeatureBottomCTASection";
 import FeatureHowItWorksSection from "@/features/FeatureHowItWorksSection";
-import FeatureKeyFeaturesSection from "@/features/FeatureKeyFeaturesSection";
 import FeaturePricelistSection from "@/features/FeaturePricelistSection";
+import { FeatureKeyFeaturesSection } from "@/features/FeatureKeyFeaturesSection";
 
 interface Params {
   params: {
@@ -48,6 +48,7 @@ export default function HomePage() {
       {/* <LogAnalytics eventName="page_view" eventParams={{ page: "home" }} /> */}
 
       <FeatureJumbotronSection />
+      <FeatureKeyFeaturesSection />
       <FeatureHowItWorksSection />
       <FeaturePricelistSection />
       <FeatureBottomCTASection />

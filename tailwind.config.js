@@ -158,17 +158,45 @@ module.exports = {
 
       // Tailwind default colors
 
-      primary: {
-        100: "#F1FAFE",
-        200: "#AEE1FA",
-        300: "#5EB6EB",
-        400: "#3692D8",
-        DEFAULT: "#0063BF",
-        600: "#0058A7",
-        700: "#004D8F",
-        800: "#004275",
-        900: "#00375D"
+      // primary: {
+      //   100: "#F1FAFE",
+      //   200: "#AEE1FA",
+      //   300: "#5EB6EB",
+      //   400: "#3692D8",
+      //   DEFAULT: "#0063BF",
+      //   600: "#0058A7",
+      //   700: "#004D8F",
+      //   800: "#004275",
+      //   900: "#00375D"
+      // },
+        primary: {
+      100: "#FDE7FF",
+      200: "#F9B5FF",
+      300: "#F382FF",
+      400: "#F05CFF",
+      DEFAULT: "#EF3BFB", // primary utama (CTA, highlight)
+      600: "#D92EE6",
+      700: "#B926C0",
+      800: "#8B1F92",
+      900: "#611466",
+    },
+      highlight: "#FFB703",
+      "highlight-foreground": "#1E0F33",
+      surface: {
+        DEFAULT: "#F8F2FF",
+        strong: "#EFE4FF",
       },
+      ink: {
+        DEFAULT: "#1E0F33",
+        muted: "#3A245C",
+      },
+      accent: "#2A1647",
+      border: "#3A245C",
+      heading: "#F8F5FF",
+      body: "#D7CDEA",
+      background: "#1E0F33",
+      textColor: "#E9E3F5",
+      "primary-foreground": "#1E0F33",
       success: {
         100: "#C8F3D0",
         200: "#B3F9AA",
@@ -1172,4 +1200,3 @@ module.exports = {
     require("tailwindcss-animate")
   ],
 }
-

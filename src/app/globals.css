@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .rdp-vhidden {
   @apply hidden;
 }
@@ -43,9 +42,7 @@
 }
 
 body {
-
 }
-
 
 button {
   cursor: pointer;
@@ -57,14 +54,15 @@ button:disabled {
 }
 
 .register-container {
-    /* 使用系统字体，避免字体加载问题 */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  /* 使用系统字体，避免字体加载问题 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
   /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
   background-color: rgb(29 15 51 / 0.95);
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   width: 100%;
   /* max-width: 400px; */
   padding: 20px;
@@ -76,9 +74,7 @@ button:disabled {
   /* backdrop-filter: blur(10px); */
   border-radius: 20px;
   padding: 40px 30px;
-  box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.1),
-    0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -206,7 +202,7 @@ button:disabled {
 
 .divider::before,
 .divider::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   width: 45%;

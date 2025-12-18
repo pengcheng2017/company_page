@@ -1,151 +1,186 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { MessageSquare, TrendingUp, Users } from "lucide-react";
 import Language from "@/lib/language";
 import dictionary from "@/assets/locale/dictionary.json";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-
 
 export default function FeatureJumbotronSection() {
+  return (
+    <section
+      id="home"
+      className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-background px-20"
+    >
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/10 -z-10" />
 
-    const [text, setText] = useState('');
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const fullText = Language(dictionary.subtitle_section)
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="space-y-8"
+          >
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-5xl lg:text-6xl xl:text-7xl font-bold text-heading leading-tight text-balance"
+            >
+              {Language(dictionary.main_title_section)}
+            </motion.h1>
 
-    useEffect(() => {
-        if (currentIndex < fullText.length) {
-            const timeout = setTimeout(() => {
-                setText(prev => prev + fullText[currentIndex]);
-                setCurrentIndex(prev => prev + 1);
-            }, 100);
-            return () => clearTimeout(timeout);
-        } else {
-            const resetTimeout = setTimeout(() => {
-                setText('');
-                setCurrentIndex(0);
-            }, 2000);
-            return () => clearTimeout(resetTimeout);
-        }
-    }, [currentIndex]);
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-lg lg:text-xl text-body leading-relaxed"
+            >
+              {Language(dictionary.subtitle_section)}
+            </motion.p>
 
-    return (
-        <section
-            id="home"
-            className="relative min-h-screen py-20 flex items-center justify-center overflow-hidden"
-            style={{
-                backgroundImage: 'url(https://ext.same-assets.com/130432291/769134430.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-            }}
-        >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#1d0f33] via-[#2d1f43] to-[#1d0f33] opacity-90" />
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="flex flex-col sm:flex-row gap-4"
+            >
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              >
+                {Language(dictionary.try_now_section)}
+              </Button>
+              {/* <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-transparent"
+              >
+                {Language(dictionary.learn_more_section)}
+              </Button> */}
+            </motion.div>
+          </motion.div>
 
-            {/* Floating decorative elements */}
-            <div className="absolute top-20 left-10 w-20 h-20 bg-purple-600/30 rounded-3xl blur-xl animate-pulse" />
-            <div className="absolute top-32 right-20 w-16 h-16 bg-blue-500/30 rounded-2xl blur-lg animate-pulse" style={{ animationDelay: '1s' }} />
-            <div className="absolute bottom-40 right-96 w-12 h-12 bg-pink-500/30 rounded-xl blur-md animate-pulse" style={{ animationDelay: '2s' }} />
-            <div className="absolute top-1/2 right-20 w-24 h-24 bg-indigo-600/20 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }} />
-
-            <div className="relative z-10 w-full max-w-[1200px] mx-auto px-6 mt-20">
-                <div className="text-center">
-                    <h1 className="text-3xl md:text-5xl lg:text-[55px] font-semibold text-white mb-4 leading-tight" style={{ fontFamily: '"Gill Sans", sans-serif' }}>
-                        {Language(dictionary.main_title_section)}
-                    </h1>
-
-                    <div className="lg:text-[50px] mb-6">
-                        <span className="text-white whitespace-nowrap">
-                            {Language(dictionary.main_pre_subtitle_section)}
-                        </span>
-                        <span className="text-[#DA37E8] min-w-[200px] md:min-w-[600px] text-left">
-                            {text}
-                        </span>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8, y: 50 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="relative"
+          >
+            <motion.div
+              animate={{ y: [0, -20, 0] }}
+              transition={{
+                duration: 4,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+              className="relative z-10"
+            >
+              <div className="bg-accent rounded-3xl shadow-2xl p-8 border border-border">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-heading/10 rounded-xl flex items-center justify-center">
+                      <TrendingUp className="w-6 h-6 text-heading" />
                     </div>
-
-                    <div className="flex justify-center my-12">
-                        <a
-                            href="https://system.salesupaisass.com/register"
-                            className="px-10 py-4 font-semibold text-lg text-white rounded-full transition-transform hover:scale-105"
-                            style={{ background: 'linear-gradient(96deg, #EF3BFB 0.67%, #6721FF 98.48%)' }}
-                        >
-                            {Language(dictionary.try_now_section)}
-                        </a>
+                    <div>
+                      <p className="text-sm text-body">
+                        {Language(dictionary.jumbotron_sales_performance_label)}
+                      </p>
+                      <p className="text-2xl font-bold text-primary">+148%</p>
                     </div>
-
-                    <div className="flex flex-col md:flex-row justify-center gap-6 max-w-4xl mx-auto">
-                        <div className="w-full md:w-[400px] py-6 bg-black rounded-xl p-5 flex flex-col hover:shadow-xl hover:shadow-purple-500/20 transition-all">
-                            <h3 className="text-[21px] font-mediumt text-left text-white mb-2">
-                                {Language(dictionary.try_for_free_title_section)}
-                            </h3>
-                            <p className="text-sm text-left text-white flex-1">
-                                {Language(dictionary.try_for_free_subtitle_section)}
-                            </p>
-                            <a href="https://system.salesupaisass.com/register" className="text-[#EF3BFB] font-plus-jakarta-sans-medium hover:underline flex items-center gap-2 mt-2">
-                                {Language(dictionary.try_for_free_button_section)}
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                    <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" />
-                                </svg>
-                            </a>
-                        </div>
-
-                    </div>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm text-body">
+                      {Language(dictionary.jumbotron_this_month_label)}
+                    </p>
+                    <p className="text-2xl font-bold text-heading">$52.4K</p>
+                  </div>
                 </div>
 
-                <div className="max-w-[1200px] mx-auto my-60 px-6">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
-                        <div className="flex-1 text-white">
-                            <h2 className="text-3xl font-semibold mb-1">
-                                {Language(dictionary.key_features_title_section)}
-                            </h2>
-                            <p className="text-xl text-white/80 mb-8">
-                                {Language(dictionary.key_features_subtitle_section)}
-                            </p>
-
-                            <ul className="space-y-4 text-gray-700">
-                                <li className="flex flex-col items-start gap-1">
-                                    <span className="text-[#EF3BFB] text-xl font-semibold">
-                                        {Language(dictionary.key_feature_item_1_title_section)}
-                                    </span>
-                                    <span className="text-white/80">
-                                        {Language(dictionary.key_feature_item_1_subtitle_section)}
-                                    </span>
-                                </li>
-                                <li className="flex flex-col items-start gap-1">
-                                    <span className="text-[#EF3BFB] text-xl font-semibold">
-                                        {Language(dictionary.key_feature_item_2_title_section)}
-                                    </span>
-                                    <span className="text-white/80">
-                                        {Language(dictionary.key_feature_item_2_subtitle_section)}
-                                    </span>
-                                </li>
-                                <li className="flex flex-col items-start gap-1">
-                                    <span className="text-[#EF3BFB] text-xl font-semibold">
-                                        {Language(dictionary.key_feature_item_3_title_section)}
-                                    </span>
-                                    <span className="text-white/80">
-                                        {Language(dictionary.key_feature_item_3_subtitle_section)}
-                                    </span>
-                                </li>
-                                <li className="flex flex-col items-start gap-1">
-                                    <span className="text-[#EF3BFB] text-xl font-semibold">
-                                        {Language(dictionary.key_feature_item_4_title_section)}
-                                    </span>
-                                    <span className="text-white/80">
-                                        {Language(dictionary.key_feature_item_4_subtitle_section)}
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="flex-1">
-                            <Image
-                                src={require('@/assets/image/our-product.png')}
-                                alt="AI Process Engine"
-                                className="w-full rounded-lg"
-                            />
-                        </div>
-                    </div>
+                <div className="flex items-end gap-2 h-32 mb-6">
+                  {[40, 65, 45, 80, 60, 90, 75, 95].map((height, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ height: 0 }}
+                      animate={{ height: `${height}%` }}
+                      transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
+                      className="flex-1 bg-primary/20 rounded-t-lg relative"
+                    >
+                      <div
+                        className="absolute bottom-0 w-full bg-primary rounded-t-lg"
+                        style={{ height: "60%" }}
+                      />
+                    </motion.div>
+                  ))}
                 </div>
-            </div>
-        </section>
-    );
+
+                <div className="flex items-center gap-4">
+                  <div className="flex-1 h-2 bg-accent rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      animate={{ width: "75%" }}
+                      transition={{ duration: 1, delay: 0.8 }}
+                      className="h-full bg-primary rounded-full"
+                    />
+                  </div>
+                  <span className="text-sm font-semibold text-heading">
+                    75%
+                  </span>
+                </div>
+              </div>
+
+              <motion.div
+                animate={{ y: [0, -10, 0], x: [0, 5, 0] }}
+                transition={{
+                  duration: 3,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                }}
+                className="absolute -top-8 -left-8 bg-accent rounded-2xl shadow-xl p-4 border border-border w-64"
+              >
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-heading/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MessageSquare className="w-5 h-5 text-heading" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-xs font-semibold text-primary mb-1">
+                      {Language(dictionary.jumbotron_ai_assistant_label)}
+                    </p>
+                    <p className="text-xs text-body">
+                      {Language(dictionary.jumbotron_ai_lead_message)}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                animate={{ y: [0, 10, 0], x: [0, -5, 0] }}
+                transition={{
+                  duration: 3.5,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                  delay: 1,
+                }}
+                className="absolute -bottom-8 -right-8 bg-accent rounded-2xl shadow-xl p-4 border border-border"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-heading/10 rounded-full flex items-center justify-center">
+                    <Users className="w-5 h-5 text-heading" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-body">
+                      {Language(dictionary.jumbotron_active_users_label)}
+                    </p>
+                    <p className="text-lg font-bold text-heading">2,847</p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
 }

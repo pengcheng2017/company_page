@@ -1,26 +1,71 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 import Language from "@/lib/language";
 import dictionary from "@/assets/locale/dictionary.json";
 
 export default function FeatureBottomCTASection() {
+  return (
+    <section className="py-24 lg:py-32 px-20 relative overflow-hidden bg-background">
+      <motion.div
+        animate={{
+          backgroundPosition: ["0% 0%", "100% 100%"],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Number.POSITIVE_INFINITY,
+          repeatType: "reverse",
+        }}
+        className="absolute inset-0 bg-gradient-to-br from-background via-primary/10 to-background"
+        style={{
+          backgroundSize: "200% 200%",
+        }}
+      />
 
-    return (
-        <section className="py-24 bg-gradient-to-br from-purple-600 to-purple-800 text-white text-center">
-            <div className="w-full max-w-7xl mx-auto px-5">
-                <h2 className="text-4xl font-semibold font-poppins mb-5">
-                    {Language(dictionary.final_cta_title_section)}
-                </h2>
-                <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-                    {Language(dictionary.final_cta_subtitle_section)}
-                </p>
-                <a 
-                    href="https://system.salesupaisass.com/register" 
-                    className="inline-block bg-white text-purple-600 py-3 px-8 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
-                >
-                    {Language(dictionary.final_cta_button_section)}
-                </a>
-            </div>
-        </section>
-    )
+      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="max-w-4xl mx-auto text-center"
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-4xl lg:text-6xl font-bold text-heading mb-6 text-balance"
+          >
+            {Language(dictionary.final_cta_title_section)}
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-xl text-body mb-10 max-w-2xl mx-auto"
+          >
+            {Language(dictionary.final_cta_subtitle_section)}
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-12 py-7 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-105"
+            >
+              {Language(dictionary.final_cta_button_section)}
+            </Button>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
 }

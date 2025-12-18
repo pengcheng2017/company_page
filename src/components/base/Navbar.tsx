@@ -1,205 +1,218 @@
-"use client"
+"use client";
 
-import Image from "next/image";
-import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons"
-
-import { useParams, usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { useState, useEffect, useRef } from "react";
+import { motion, useScroll } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
+import Link from "next/link";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import Language from "@/lib/language";
 import dictionary from "@/assets/locale/dictionary.json";
-import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
-export default function BaseNavbar({ authenticated }: { authenticated: any }) {
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [languageOpen, setLanguageOpen] = useState(false);
+  const { scrollY } = useScroll();
+  const navTextClass = scrolled ? "text-ink" : "text-heading";
+  const languageRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+  const router = useRouter();
+  const params = useParams();
+  const currentLocale =
+    typeof params?.locale === "string" ? params.locale : "en";
+  const languages = [
+    { code: "id", label: "Indonesia" },
+    { code: "en", label: "English" },
+    { code: "cn", label: "Chinese" },
+  ];
 
-    const [sidebar, setSidebar] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
-    const [openLocale, setOpenLocale] = useState(false);
-    const path = usePathname();
-    const dispatch = useAppDispatch()
-    const pathname = usePathname()
-    const user = useAppSelector(state => state.user)
-    const locale = useParams().locale
+  useEffect(() => {
+    return scrollY.on("change", (latest) => {
+      setScrolled(latest > 50);
+    });
+  }, [scrollY]);
 
-    useEffect(() => {
-        setIsOpen(false)
-        setOpenLocale(false)
-    }, [path])
-
-    useEffect(() => {
-        if (isOpen || sidebar) {
-            document.body.style.overflow = "hidden"
-        } else {
-            document.body.style.overflow = "auto"
-        }
-        return () => {
-            document.body.style.overflow = "auto"
-        }
-    }, [isOpen, sidebar])
-
-    useEffect(() => {
-        if (authenticated?.access_token) {
-            // dispatch(getUser())
-        }
-    }, [authenticated])
-
-    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-        e.preventDefault();
-        const element = document.getElementById(targetId);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    };
-
-    const handleLocaleNavigation = (newLocale: string) => {
-        let link = pathname;
-        
-        if (pathname.startsWith("/id/") || pathname.startsWith("/id")) {
-            link = pathname.slice(3);
-        } else if (pathname.startsWith("/cn/") || pathname.startsWith("/cn")) {
-            link = pathname.slice(3);
-        }
-        
-        if (newLocale === "en") {
-            window.location.href = "/en/" + link;
-        } else {
-            window.location.href = "/" + newLocale + link;
-        }
+  useEffect(() => {
+    if (!languageOpen) {
+      return;
     }
 
-    return (
-        <>
-            <header className="fixed top-0 left-0 right-0 z-50 bg-[#1d0f33]/95 backdrop-blur-sm">
-                <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
-                    <div className="flex items-center flex-1 overflow-hidden">
-                        <a href="/" className="mr-6 flex-shrink-0">
-                            <Image
-                                src={require('@/assets/icon/logo.png')}
-                                alt="SalesUP.AI"
-                                className="h-12 w-12 rounded-lg"
-                            />
-                        </a>
-                    
-                        <nav className="hidden font-plus-jakarta-sans-semi-bold px-4 lg:flex items-center gap-6 text-sm text-white">
-                            <a  className="text-greyscale-400 hover:text-[#DA37E8] cursor-pointer" href="/">
-                                {Language(dictionary.home_text_header_menu)}
-                            </a>
-       
-                        </nav>
-                    </div>
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        languageRef.current &&
+        !languageRef.current.contains(event.target as Node)
+      ) {
+        setLanguageOpen(false);
+      }
+    };
 
-                    <div className="flex items-center gap-4 text-sm flex-shrink-0">
-                        <div>
-                                <a href="https://system.salesupaisass.com/register"  className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors"><span>Register</span>
-                           {/* <Link href="/register" className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">Register</Link> */}
-                        </a>
-                        </div>
-                        <div onClick={() => setOpenLocale(!openLocale)} className="hidden lg:flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">
-                            <span>
-                                {Language(dictionary.button_change_language_section)}
-                            </span>
-                            <ChevronDown className="w-4 h-4" />
-                        </div>
-                        
-                        <div onClick={() => setIsOpen(!isOpen)} className="lg:hidden flex items-center cursor-pointer hover:opacity-70">
-                            <HamburgerMenuIcon className="w-6 h-6 text-white" />
-                        </div>
-                    </div>
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [languageOpen]);
+
+  const buildLocalePath = (locale: string) => {
+    if (!pathname) {
+      return `/${locale}`;
+    }
+
+    const segments = pathname.split("/");
+    if (segments.length > 1) {
+      segments[1] = locale;
+      return segments.join("/") || `/${locale}`;
+    }
+
+    return `/${locale}`;
+  };
+
+  const handleLocaleChange = (locale: string) => {
+    if (locale === currentLocale) {
+      setLanguageOpen(false);
+      return;
+    }
+
+    router.push(buildLocalePath(locale));
+    setLanguageOpen(false);
+  };
+
+  return (
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? "bg-white/80 backdrop-blur-md  shadow-sm" : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link href="#" className="flex space-x-3 items-center">
+            <Image
+              src={require("@/assets/icon/logo.png")}
+              alt="SalesUP.AI"
+              width={48}
+              height={48}
+              className="h-10 w-10 rounded-xl ring-1 ring-white/10"
+            />
+            <span className="text-2xl font-bold text-primary font-display">
+              SalesUp
+            </span>
+          </Link>
+
+          <div className="hidden lg:flex items-center gap-8">
+            <Link
+              href="#home"
+              className={`text-sm font-medium ${navTextClass} hover:text-primary transition-colors duration-300 relative group`}
+            >
+              {Language(dictionary.home_text_header_menu)}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
+            </Link>
+            <Link
+              href="#features"
+              className={`text-sm font-medium ${navTextClass} hover:text-primary transition-colors duration-300 relative group`}
+            >
+              {Language(dictionary.features_text_header_menu)}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
+            </Link>
+            <Link
+              href="#how-it-works"
+              className={`text-sm font-medium ${navTextClass} hover:text-primary transition-colors duration-300 relative group`}
+            >
+              {Language(dictionary.how_it_works_text_header_menu)}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
+            </Link>
+            <Link
+              href="#pricing"
+              className={`text-sm font-medium ${navTextClass} hover:text-primary transition-colors duration-300 relative group`}
+            >
+              {Language(dictionary.prices_text_header_menu)}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
+            </Link>
+          </div>
+
+          <div className="hidden lg:flex items-center gap-4">
+            <div className="relative" ref={languageRef}>
+              <button
+                type="button"
+                aria-haspopup="menu"
+                aria-expanded={languageOpen}
+                onClick={() => setLanguageOpen((prev) => !prev)}
+                className={`flex items-center gap-1 text-sm font-medium ${navTextClass} hover:text-primary transition-colors duration-300`}
+              >
+                {Language(dictionary.button_change_language_section)}
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    languageOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {languageOpen && (
+                <div
+                  role="menu"
+                  className={`absolute right-0 mt-3 w-40 rounded-xl border p-2 shadow-xl ${
+                    scrolled
+                      ? "bg-white border-ink/10 text-ink"
+                      : "bg-accent/95 border-border/60 text-heading"
+                  }`}
+                >
+                  {languages.map((language) => {
+                    const isActive = language.code === currentLocale;
+                    return (
+                      <button
+                        key={language.code}
+                        role="menuitem"
+                        type="button"
+                        onClick={() => handleLocaleChange(language.code)}
+                        className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm transition-colors ${
+                          isActive
+                            ? "bg-primary/15 text-primary"
+                            : scrolled
+                            ? "hover:bg-ink/5 hover:text-ink"
+                            : "hover:bg-white/5 hover:text-primary"
+                        }`}
+                      >
+                        <span>{language.label}</span>
+                        <span className="text-xs uppercase">
+                          {language.code}
+                        </span>
+                      </button>
+                    );
+                  })}
                 </div>
-            </header>
-            <AnimatePresence>
-                {
-                    openLocale && (
-                        <motion.div
-                            initial={{ opacity: 0, y: -100 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -100 }}
-                            transition={{ duration: 0.3 }}
-                            className="fixed hidden z-30 px-10 py-4 top-20 right-20 shadow-md bg-white/70 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-70 rounded-xl lg:flex items-center justify-center">
-                            <div className="flex flex-col space-y-2">
-                                <div onClick={() => handleLocaleNavigation("en")} className={`${locale == "en" ? "text-[#DA37E8]" : "text-greyscale-700"} flex items-center font-plus-jakarta-sans-bold cursor-pointer`}>
-                                    ENGLISH
-                                </div>
-                                <div onClick={() => handleLocaleNavigation("id")} className={`${locale == "id" ? "text-[#DA37E8]" : "text-greyscale-700"} flex items-center font-plus-jakarta-sans-bold cursor-pointer`}>
-                                    BAHASA
-                                </div>
-                                <div onClick={() => handleLocaleNavigation("cn")} className={`${locale == "cn" ? "text-[#DA37E8]" : "text-greyscale-700"} flex items-center font-plus-jakarta-sans-bold cursor-pointer`}>
-                                    CHINA
-                                </div>
-                            </div>
-                        </motion.div>
-                    )
-                }
-            </AnimatePresence>
-            <AnimatePresence>
-                {
-                    isOpen && (
-                        <motion.div
-                            initial={{ opacity: 0, y: -100 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -100 }}
-                            transition={{ duration: 0.3 }}
-                            className="fixed z-30 w-full h-full">
-                            <div className="space-y-4 pb-4 relative bg-[#22103b] bg-clip-padding backdrop-filter backdrop-blur-xl w-full overflow-y-auto scrollbar-none">
-                                <div className="w-full relative pt-4 px-6 flex justify-end">
-                                    <div onClick={() => setIsOpen(false)} className="lg:hidden flex items-center cursor-pointer hover:opacity-70">
-                                        <Cross1Icon className="w-6 h-6 text-white" />
-                                    </div>
-                                </div>
-                                <div className="px-6 relative space-y-4 flex flex-col font-plus-jakarta-sans-bold text-base w-full">
-                                    <a onClick={(e) => handleScroll(e, 'home')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="/home">
-                                        {Language(dictionary.home_text_header_menu)}
-                                    </a>
-                                    <a onClick={(e) => handleScroll(e, 'features')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#features">
-                                        {Language(dictionary.features_text_header_menu)}
-                                    </a>
-                                    <a onClick={(e) => handleScroll(e, 'prices')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#prices">
-                                        {Language(dictionary.prices_text_header_menu)}
-                                    </a>
-                                    <a onClick={(e) => handleScroll(e, 'about-us')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#about-us">
-                                        {Language(dictionary.about_us_text_header_menu)}
-                                    </a>
-                                    <a onClick={(e) => handleScroll(e, 'contacts')} className="text-white hover:text-[#DA37E8] cursor-pointer" href="#contacts">
-                                        {Language(dictionary.contacts_text_header_menu)}
-                                    </a>
-                                    
-                                    <div className="pt-4 border-t border-white/20">
-                                        <div onClick={() => setOpenLocale(!openLocale)} className="flex items-center gap-1 text-white cursor-pointer hover:text-[#EF3BFB] transition-colors">
-                                            <span>
-                                                {Language(dictionary.button_change_language_section)}
-                                            </span>
-                                            <ChevronDown className="w-4 h-4" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {
-                                openLocale && (
-                                    <motion.div
-                                        initial={{ opacity: 0, y: -100 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -100 }}
-                                        transition={{ duration: 0.3 }}
-                                        className="absolute z-50 w-40 px-4 py-4 right-4 -mt-6 shadow-md bg-white rounded-lg bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-90 flex items-center justify-center">
-                                        <div className="flex flex-col space-y-2">
-                                            <div onClick={() => handleLocaleNavigation("en")} className={`${locale == "en" ? "text-[#DA37E8]" : "text-greyscale-600"} flex items-center font-plus-jakarta-sans-bold cursor-pointer`}>
-                                                ENGLISH
-                                            </div>
-                                            <div onClick={() => handleLocaleNavigation("id")} className={`${locale == "id" ? "text-[#DA37E8]" : "text-greyscale-600"} flex items-center font-plus-jakarta-sans-bold cursor-pointer`}>
-                                                BAHASA
-                                            </div>
-                                            <div onClick={() => handleLocaleNavigation("cn")} className={`${locale == "cn" ? "text-[#DA37E8]" : "text-greyscale-600"} flex items-center font-plus-jakarta-sans-bold cursor-pointer`}>
-                                                CHINA
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                )
-                            }
-                        </motion.div>
-                    )
-                }
-            </AnimatePresence>
-        </>
-    )
+              )}
+            </div>
+            <Button
+              variant="ghost"
+              onClick={() => {
+                window.location.href =
+                  "https://system.salesupaisass.com/register";
+              }}
+              className={`text-sm font-medium ${navTextClass} hover:text-primary`}
+            >
+              {Language(dictionary.register_button_section)}
+            </Button>
+          </div>
+
+          <button className="lg:hidden">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </motion.nav>
+  );
 }

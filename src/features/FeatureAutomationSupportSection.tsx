@@ -2,10 +2,10 @@ export default function FeatureAutomationSupportSection() {
 
 
     return (
-        <section className="py-20 bg-[#080613]">
+        <section className="py-20 bg-background">
             <div className="max-w-[1200px] mx-auto px-6">
-                <h2 className="text-4xl font-semibold text-center text-white mb-4">Automated Support</h2>
-                <p className="text-center text-gray-400 mb-16">
+                <h2 className="text-4xl font-semibold text-center text-heading mb-4">Automated Support</h2>
+                <p className="text-center text-body mb-16">
                     Build an expert digital workforce through the integrated platform of intelligent and digital operation services + AI
                 </p>
 
