@@ -5,6 +5,7 @@ import { useState, useEffect, useRef, FormEvent } from 'react';
 import Language from "@/lib/language";
 import dictionary from "@/assets/locale/dictionary.json";
 import styles from './CustomerServiceChat.module.css';
+import { apiService } from '@/lib/api';
 
 interface Message {
   id: string;
@@ -92,15 +93,7 @@ const CustomerServiceChat = () => {
         user: 'user',
       };
 
-      const response = await fetch('http://localhost:8080/backend/open/customer-service/dify/chat-messages-customer-service', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(requestData),
-      });
-
-      const data: ChatResponse = await response.json();
+      const data: ChatResponse = await apiService.sendCustomServiceAIChat(requestData);
 
       if (data.code === 200 && data.data) {
         // 添加AI回复到列表

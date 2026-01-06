@@ -378,6 +378,14 @@ class ApiService {
     });
   }
 
+    // AI 聊天接口
+  async sendCustomServiceAIChat(request: any): Promise<AIChatResponse> {
+    return this.request<AIChatResponse>('/backend/open/customer-service/dify/chat-messages-customer-service', {
+      method: 'POST',
+      body: JSON.stringify(request),
+    });
+  }
+
   // 联系人相关接口
   async saveCustomer(customer: SaveCustomerRequest): Promise<SaveCustomerResponse> {
     return this.request<SaveCustomerResponse>('/backend/api/customer', {
