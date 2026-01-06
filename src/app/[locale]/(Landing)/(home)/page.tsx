@@ -1,3 +1,4 @@
+// home/page.tsx
 import { Metadata } from "next";
 import FeatureJumbotronSection from "@/features/FeatureJumbotronSection";
 import FeatureOurClientsSection from "@/features/FeatureOurClientsSection";
@@ -5,6 +6,7 @@ import FeatureBottomCTASection from "@/features/FeatureBottomCTASection";
 import FeatureHowItWorksSection from "@/features/FeatureHowItWorksSection";
 import FeatureKeyFeaturesSection from "@/features/FeatureKeyFeaturesSection";
 import FeaturePricelistSection from "@/features/FeaturePricelistSection";
+import CustomerServiceChat from "./CustomerServiceChat"; // 导入客服组件
 
 interface Params {
   params: {
@@ -13,7 +15,6 @@ interface Params {
 }
 
 export async function generateMetadata({ params: { locale } }: Params): Promise<Metadata> {
-
   return {
     robots: {
       index: true,
@@ -28,12 +29,10 @@ export async function generateMetadata({ params: { locale } }: Params): Promise<
     twitter: {
       title: "SALESUP AI - Raise your beauty sales with automatic AI!",
       description: "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
-      // images: baseURL + images.small.url
     },
     openGraph: {
       title: "SALESUP AI - Raise your beauty sales with automatic AI!",
       description: "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
-      // images: newImages
     }
   }
 }
@@ -43,10 +42,13 @@ export default function HomePage() {
     <>
       {/* <LogAnalytics eventName="page_view" eventParams={{ page: "home" }} /> */}
 
-
-      <FeatureJumbotronSection /><FeatureHowItWorksSection /><FeaturePricelistSection /><FeatureBottomCTASection />
+      <FeatureJumbotronSection />
+      <FeatureHowItWorksSection />
+      <FeaturePricelistSection />
+      <FeatureBottomCTASection />
       
-      
+      {/* 添加客服机器人对话框 */}
+      <CustomerServiceChat />
     </>
   );
 }

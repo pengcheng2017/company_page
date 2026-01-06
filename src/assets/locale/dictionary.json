@@ -512,5 +512,54 @@
         "eng": "Re-enter your password",
         "id": "Masukkan ulang kata sandi Anda",
         "cn": "再次输入你的密码"
-    }
+    },  "chat_welcome_message": {
+    "eng": "Hello! I am your AI customer service assistant, how can I help you today?",
+    "id": "Halo! Saya adalah asisten layanan pelanggan AI Anda, apa yang bisa saya bantu hari ini?",
+    "cn": "您好！我是您的AI客服助手，今天有什么可以帮您的吗？"
+  },
+  "chat_input_placeholder": {
+    "eng": "Please enter your question...",
+    "id": "Silakan masukkan pertanyaan Anda...",
+    "cn": "请输入您的问题..."
+  },
+  "chat_clear_button": {
+    "eng": "Clear",
+    "id": "Hapus",
+    "cn": "清空"
+  },
+  "chat_close_button": {
+    "eng": "Close chat",
+    "id": "Tutup obrolan",
+    "cn": "关闭聊天"
+  },
+  "chat_send_button": {
+    "eng": "Send message",
+    "id": "Kirim pesan",
+    "cn": "发送消息"
+  },
+  "chat_title": {
+    "eng": "AI Customer Service Assistant",
+    "id": "Asisten Layanan Pelanggan AI",
+    "cn": "AI客服助手"
+  },
+  "chat_network_error": {
+    "eng": "Network connection problem, please check your connection.",
+    "id": "Masalah koneksi jaringan, silakan periksa koneksi Anda.",
+    "cn": "网络连接出现问题，请检查您的网络连接。"
+  },
+  "chat_server_error": {
+    "eng": "Sorry, I am unable to answer your question at the moment. Please try again later.",
+    "id": "Maaf, saya tidak dapat menjawab pertanyaan Anda saat ini. Silakan coba lagi nanti.",
+    "cn": "抱歉，我暂时无法回答您的问题。请稍后再试。"
+  },
+  "chat_loading_message": {
+    "eng": "AI is thinking...",
+    "id": "AI sedang berpikir...",
+    "cn": "AI正在思考中..."
+  },
+  "chat_empty_chat_message": {
+    "eng": "Hello! I am your AI customer service assistant, how can I help you today?",
+    "id": "Halo! Saya adalah asisten layanan pelanggan AI Anda, apa yang bisa saya bantu hari ini?",
+    "cn": "您好！我是您的AI客服助手，今天有什么可以帮您的吗？"
+  }
 }

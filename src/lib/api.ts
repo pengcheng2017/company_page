@@ -4,6 +4,13 @@ import { MD5 } from './MD5';
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8080';
 console.log('process.env.NEXT_PUBLIC_API_BASE_URL = ' + process.env.NEXT_PUBLIC_API_BASE_URL)
 
+export interface ApiResponse<T = any> {
+  code: number;
+  datas?: T;
+  data?: T;
+  message: string | null;
+}
+
 export interface LoginRequest {
   username: string;
   password: string;
@@ -407,6 +414,27 @@ class ApiService {
       method: 'POST',
     });
   }
+
+// api.ts 中添加
+async resetPassword(data: {
+  username: string;
+  password: string;
+  confirmPassword: string;
+  forgetPassword: boolean;
+}): Promise<ApiResponse<boolean>> {
+  try {
+    return this.request<ApiResponse<boolean>>(`/backend/user/updatePassword`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+  } catch (error) {
+    console.error('Reset password error:', error);
+    throw error;
+  }
 }
 
+}
 export const apiService = new ApiService();
