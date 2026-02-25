@@ -24,14 +24,14 @@ export async function generateMetadata({ params: { locale } }: Params): Promise<
         follow: true
       }
     },
-    title: "SALESUP AI - Raise your beauty sales with automatic AI!",
+    title: "SALESUP AI - Raise your sales with automatic AI!",
     description: "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
     twitter: {
-      title: "SALESUP AI - Raise your beauty sales with automatic AI!",
+      title: "SALESUP AI - Raise your sales with automatic AI!",
       description: "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
     },
     openGraph: {
-      title: "SALESUP AI - Raise your beauty sales with automatic AI!",
+      title: "SALESUP AI - Raise your sales with automatic AI!",
       description: "Build trust, create promo plans, and complete sales-all automatically with salesup. ai.",
     }
   }
